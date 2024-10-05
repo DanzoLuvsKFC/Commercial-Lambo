@@ -1,10 +1,10 @@
 // Menu tings
 const navMenuItems = [
-    { name: "Home", href: "../../index.html" },
-    { name: "Data Visualization", href: "./Information/data.html" },
-    { name: "Design and Research", href: "./Design/design&research.html" },
-    { name: "Theory", href: "./Theory/theory.html"},
-    { name: "About", href: "./About/about.html" }
+    { name: "Home", href: "/Commercial-Lambo/index.html" },
+    { name: "Data Visualization", href: "/Commercial-Lambo/Information/data.html" },
+    { name: "Design and Research", href: "/Commercial-Lambo/Design/design&research.html" },
+    { name: "Theory", href: "/Commercial-Lambo/Theory/theory.html"},
+    { name: "About", href: "/Commercial-Lambo/About/about.html" }
 ];
 
 // Method for the Menu Items

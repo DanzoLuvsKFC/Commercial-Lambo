@@ -53,12 +53,12 @@ body {
 
 @font-face {
     font-family: 'Pangchan'; 
-    src: url('/Fonts/Pangchan.otf') format('truetype'); /* The path to your font file */
+    src: url('../Fonts/Pangchan.otf') format('truetype'); /* The path to your font file */
   }
 
 @font-face {
     font-family: 'Satoshi'; 
-    src: url('/Fonts/Satoshi-Medium.otf') format('truetype'); /* The path to your font file */
+    src: url('../Fonts/Satoshi-Medium.otf') format('truetype'); /* The path to your font file */
   }
   
 

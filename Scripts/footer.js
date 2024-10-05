@@ -9,7 +9,7 @@ window.onload = function() {
 
     // Create contact information text
     const contactInfo = document.createElement('p');
-    contactInfo.innerText = "Contact us at: example@example.com"; // Change this later to your contact info
+    contactInfo.innerText = "Contact us at: lamborghiniOverferrari@gmail.com"; // Change this later to your contact info
     footer.appendChild(contactInfo);
 
     // Create a div to hold the social media icons
@@ -18,8 +18,8 @@ window.onload = function() {
 
     // Social media icons
     const socialMedias = [
-        { link: "https://facebook.com", imgSrc: "facebook-icon.png", altText: "Facebook" },
-        { link: "https://twitter.com", imgSrc: "twitter-icon.png", altText: "Twitter" }
+        { link: "https://www.instagram.com/lamborghini?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", imgSrc: "facebook-icon.png", altText: "Instagram" },
+        { link: "https://www.tiktok.com/@lamborghini?is_from_webapp=1&sender_device=pc", imgSrc: "twitter-icon.png", altText: "Tiktok" }
     ];
 
     // Loop through the social media array and create image links

@@ -26,6 +26,7 @@ function createChart(data) {
     const width = 800;
     const height = 600;
 
+    // Updated to set an initial transform that fits the whole view
     let currentTransform = [width / 2, height / 2, height];  
 
     const svg = d3.select("#chicken")
@@ -40,7 +41,7 @@ function createChart(data) {
         .attr("cx", d => d.x)
         .attr("cy", d => d.y)
         .attr("r", d => d.radius)  // Use constant radius
-        .attr("fill", d => d3.interpolateRainbow(d.index / data.length));
+        .attr("fill", "#fbcd5d");
 
     // Add text labels for each circle
     g.selectAll("text")
@@ -50,14 +51,18 @@ function createChart(data) {
         .attr("y", d => d.y)
         .attr("dy", ".35em")  
         .attr("text-anchor", "middle")  
-        .attr("font-size", "12px")
+        .attr("font-size", "3px")
+        .attr("font-family", "Satoshi")
         .attr("fill", "black")
         .text(d => d.name);
 
     // Zoom transition function (continuous animation)
     function transition() {
         const d = data[Math.floor(Math.random() * data.length)];
-        const i = d3.interpolateZoom(currentTransform, [d.x, d.y, d.radius * 2 + 1]);
+        // Ensure the zoom level does not go below a minimum scale
+        const minScale = 1; // Minimum scale to ensure visibility
+        const scaleFactor = Math.max(d.radius * 2, minScale);
+        const i = d3.interpolateZoom(currentTransform, [d.x, d.y, scaleFactor]);
 
         g.transition()
             .delay(250)
@@ -77,6 +82,7 @@ function createChart(data) {
 
     return svg.call(transition).node();  // Start the transition immediately
 }
+
 
 
 

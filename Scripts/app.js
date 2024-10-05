@@ -6,7 +6,7 @@ fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas/171/modelos')
         const carData = data.modelos;
 
         const svg = d3.select("svg");
-        const margin = { top: 20, right: 30, bottom: 40, left: 150 };
+        const margin = { top: 20, right: 30, bottom: 50, left: 150 };
         const width = svg.attr("width") - margin.left - margin.right;
         const height = svg.attr("height") - margin.top - margin.bottom;
 

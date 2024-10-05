@@ -124,6 +124,10 @@ h2{
     padding-bottom: 0.5rem;
 }
 
+h2:hover{
+    color: #fbcd5d;
+}
+
 #HomeTitle{
     font-size: 4.5rem;
     padding-top: 0rem;
@@ -149,6 +153,10 @@ margin-bottom: 10rem;
     padding-bottom: 0rem; 
     margin-top: 0rem;
     margin-bottom: 0rem;
+}
+
+a {
+    text-decoration: none; /* Removes the underline */
 }
 
 

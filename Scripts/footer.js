@@ -18,9 +18,17 @@ window.onload = function() {
 
     // Social media icons
     const socialMedias = [
-        { link: "https://www.instagram.com/lamborghini?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", imgSrc: "/Commercial-Lambo/Images/Insta Logo.png", altText: "Instagram" },
-        { link: "https://www.tiktok.com/@lamborghini?is_from_webapp=1&sender_device=pc", imgSrc: "/Commercial-Lambo/Images/TiktokLogo.png", altText: "Tiktok" }
-    ];
+        { 
+            link: "https://www.instagram.com/lamborghini?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", 
+            imgSrc: `${window.location.origin}/Commercial-Lambo/Images/Insta%20Logo.png`,  // Dynamically construct the absolute URL
+            altText: "Instagram"
+        },
+        { 
+            link: "https://www.tiktok.com/@lamborghini?is_from_webapp=1&sender_device=pc", 
+            imgSrc: `${window.location.origin}/Commercial-Lambo/Images/TiktokLogo.png`,  // Dynamically construct the absolute URL
+            altText: "Tiktok"
+        }
+    ]
 
     // Loop through the social media array and create image links
     socialMedias.forEach(media => {

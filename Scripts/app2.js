@@ -2,18 +2,18 @@ fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas/171/modelos')
     .then(response => response.json())
     .then(data => {
         const numCircles = data.modelos.length;
-        const radius = 250;  // Set the radius for the circular arrangement
-        const centerX = 400;  // Center of the SVG
-        const centerY = 300;  // Center of the SVG
-        const circleSize = 30;  // Set a constant circle size
+        const radius = 250;  
+        const centerX = 400;  
+        const centerY = 300;  
+        const circleSize = 30;  
 
         const carData = data.modelos.map((car, i) => {
-            const angle = (i / numCircles) * 2 * Math.PI;  // Calculate angle for each circle
+            const angle = (i / numCircles) * 2 * Math.PI;  
             return {
                 name: car.nome,
-                x: centerX + radius * Math.cos(angle),  // Calculate x position
-                y: centerY + radius * Math.sin(angle),  // Calculate y position
-                radius: circleSize,  // Set all circles to the same size
+                x: centerX + radius * Math.cos(angle),  
+                y: centerY + radius * Math.sin(angle),  
+                radius: circleSize,  
                 index: i
             };
         });
@@ -26,7 +26,7 @@ function createChart(data) {
     const width = 800;
     const height = 600;
 
-    let currentTransform = [width / 2, height / 2, height];  // Initial state
+    let currentTransform = [width / 2, height / 2, height];  
 
     const svg = d3.select("#chicken")
         .attr("viewBox", [0, 0, width, height]);
@@ -48,8 +48,8 @@ function createChart(data) {
         .join("text")
         .attr("x", d => d.x)
         .attr("y", d => d.y)
-        .attr("dy", ".35em")  // Vertically centers the text within the circle
-        .attr("text-anchor", "middle")  // Horizontally centers the text
+        .attr("dy", ".35em")  
+        .attr("text-anchor", "middle")  
         .attr("font-size", "12px")
         .attr("fill", "black")
         .text(d => d.name);

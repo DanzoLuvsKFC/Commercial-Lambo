@@ -44,7 +44,7 @@ fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas/171/modelos')
             .style("display", "none")
             .style("pointer-events", "none")
             .style("font-family", "Pangchan")  // Change the font family
-            .style("font-size", "30px");  
+            .style("font-size", "1000px");  
 
         // Add bars
         g.selectAll(".bar")
@@ -72,13 +72,13 @@ fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas/171/modelos')
             });
 
         // Placeholder for images next to bars
-        g.selectAll(".car-image")
+        /*g.selectAll(".car-image")
             .data(carData)
             .enter().append("image")
             .attr("xlink:href", d => `../Images/${d.nome}.jpeg`) // Replace with actual image URLs
             .attr("x", -50) // Position to the left of the bars
             .attr("y", d => y(d.nome) + (y.bandwidth() / 2) - 20)
-            .attr("class", "car-image");
+            .attr("class", "car-image");*/
 
         // Add car names to the bars
         /*g.selectAll(".label")

@@ -49,6 +49,11 @@ body {
     font-family: 'Pangchan'; 
     src: url('/Fonts/Pangchan.otf') format('truetype'); /* The path to your font file */
   }
+
+@font-face {
+    font-family: 'Satoshi'; 
+    src: url('/Fonts/Satoshi-Medium.otf') format('truetype'); /* The path to your font file */
+  }
   
 
 
@@ -99,6 +104,33 @@ footer {
     color: #fff;
     padding: 5px;
     text-align: center;
+}
+
+/*Content*/
+
+h2{
+    margin-left: 10rem;
+    font-family: 'Pangchan';
+    color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+p{
+    margin-left: 15rem;
+    font-family: 'Satoshi';
+    color: #fbcd5d;
+    margin-right: 15rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    font-size: 1.3rem
+}
+
+.Content-Image{
+    position: relative;
+    left: 10rem;
+    width: 40rem;
+    height: 20rem;
 }
 
   

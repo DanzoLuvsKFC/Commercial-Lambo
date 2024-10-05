@@ -28,7 +28,7 @@ window.onload = function() {
             imgSrc: `${window.location.origin}/Commercial-Lambo/Images/TiktokLogo.png`,  // Dynamically construct the absolute URL
             altText: "Tiktok"
         }
-    ]
+    ];
 
     // Loop through the social media array and create image links
     socialMedias.forEach(media => {

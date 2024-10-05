@@ -58,6 +58,14 @@ body {
 
 
   /*NAV BAR*/
+
+  header{
+    background-color: #333;
+  }
+
+  nav{
+    background-color: #333;
+  }
 .nav-link {
     color: white; /* Change the text color */
     text-decoration: none;
@@ -133,12 +141,7 @@ p{
     height: 20rem;
 }
 
-.Content-Images{
-    position: relative;
-    left: 20rem;
-    width: 40rem;
-    height: 20rem;
-}
+
 
   
   

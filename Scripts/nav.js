@@ -12,7 +12,7 @@ function CreateMenuItems() {
     //selecting my nav tag 
     const nav = document.querySelector('nav');
     const logo = document.createElement('img');
-    logo.src = '../Images/LAMBO LOGOO.png'; // Path to your logo image
+    logo.src = '/Commercial-Lambo/Images/LAMBO LOGOO.png'; // Path to your logo image
     logo.alt = 'Logo'; // Alt text for accessibility
     logo.id = 'nav-logo';
     const ul = document.createElement('ul');

@@ -37,12 +37,14 @@ fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas/171/modelos')
         // Tooltip setup
         const tooltip = d3.select("body").append("div")
             .attr("class", "tooltip")
-            .style("position", "absolute")
+            .style("position", "relative")
             .style("background-color", "white")
             .style("border", "1px solid black")
             .style("padding", "8px")
             .style("display", "none")
-            .style("pointer-events", "none");
+            .style("pointer-events", "none")
+            .style("font-family", "Pangchan")  // Change the font family
+            .style("font-size", "30px");  
 
         // Add bars
         g.selectAll(".bar")

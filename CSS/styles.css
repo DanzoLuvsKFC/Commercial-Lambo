@@ -31,14 +31,20 @@ text {
 
 .Items {
     position: relative;
-    left: 150px;
-    top: 100px;
+    margin-left: 5rem;
+    padding: 10rem;
+}
+
+#chicken{
+    position: relative;
+    margin-left: 5rem;
+    padding: 6rem;
 }
 
 /* Web Page Deco*/
 
 body {
-    background-color: #292929;
+    background-color:#ffffff;
     height: 100%;
     margin: 0;
     display: flex;
@@ -96,13 +102,7 @@ body {
     
 }
 
-#nav-logo:hover{
-    
-}
 
-#nav-logo{
-
-}
 
 /*FOOTER*/
 
@@ -119,21 +119,26 @@ footer {
 h2{
     margin-left: 10rem;
     font-family: 'Pangchan';
-    color: #fff;
+    color: #333;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
 }
 
 h2:hover{
-    color: #fbcd5d;
+    color:#fbcd5d
 }
 
 #HomeTitle{
+    color: #333;
     font-size: 4.5rem;
     padding-top: 0rem;
     padding-bottom: 0rem; 
     margin-top: 0rem;
     margin-bottom: 0rem;
+}
+
+#HomeTitle:hover{
+    color: #fbcd5d;
 }
 
 #TitleHome{
@@ -148,12 +153,18 @@ margin-bottom: 10rem;
 }
 
 #SecondTitle{
+    color: #333;
     font-size: 4.5rem;
     padding-top: 0rem;
     padding-bottom: 0rem; 
     margin-top: 0rem;
     margin-bottom: 0rem;
 }
+
+#SecondTitle:hover{
+    color: #fbcd5d;
+}
+
 
 a {
     text-decoration: none; /* Removes the underline */
@@ -163,7 +174,7 @@ a {
 p{
     margin-left: 15rem;
     font-family: 'Satoshi';
-    color: #fbcd5d;
+    color: #333;
     margin-right: 15rem;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
@@ -175,6 +186,70 @@ p{
     left: 10rem;
     width: 40rem;
     height: 20rem;
+}
+
+#HomeImage {
+    position: absolute;
+    margin-top: 10rem;
+    margin-left: 50rem;
+    z-index: -1;
+    width: 35rem;
+    height: 40rem;
+}
+
+#HomeImage3 {
+    position: absolute;
+    margin-top: 10rem;
+    margin-left: 50rem;
+    z-index: -1;
+    width: 35rem;
+    height: 40rem;
+}
+
+#HomeImage4 {
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 55rem;
+    z-index: -1;
+    width: 30rem;
+    height: 35rem;
+}
+
+
+#Home2{
+    position: absolute;
+    margin-top: 35rem;
+    margin-left: 10rem;
+    z-index: -1;
+    width: 35rem;
+    height: 40rem;
+}
+
+#Home3{
+    position: absolute;
+    margin-top: 25rem;
+    margin-left: 10rem;
+    z-index: -1;
+    width: 35rem;
+    height: 40rem;
+}
+
+#Home4{
+    position: absolute;
+    margin-top: 33rem;
+    margin-left: 10rem;
+    z-index: -1;
+    width: 35rem;
+    height: 40rem;
+}
+
+#Home5{
+    position: absolute;
+    margin-top: 53rem;
+    margin-left: 60rem;
+    z-index: -1;
+    width: 35rem;
+    height: 40rem;
 }
 
 

@@ -10,9 +10,6 @@ fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas/171/modelos')
         const width = svg.attr("width") - margin.left - margin.right;
         const height = svg.attr("height") - margin.top - margin.bottom;
 
-        //const g = svg.append("g")
-            //.attr("transform", `translate(${margin.left},${margin.top})`);
-
         const g = svg.append("g")
             .attr("transform", `translate(100, 50)`);
 
@@ -71,6 +68,15 @@ fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas/171/modelos')
                 d3.select(this).attr("fill", "steelblue"); // Revert bar color
             });
 
+        // Add the "Price Range" label
+        svg.append("text")
+            .attr("x", width / 2 + 100) // Center it above the chart (adjust based on your layout)
+            .attr("y", 30) // Adjust this value to move it up or down
+            .attr("text-anchor", "middle") // Center the text
+            .attr("font-size", "16px") // Font size for the label
+            .attr("font-weight", "bold") // Make the text bold
+            .text("Price Range"); // The label text
+
         // Placeholder for images next to bars
         /*g.selectAll(".car-image")
             .data(carData)
@@ -90,3 +96,4 @@ fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas/171/modelos')
             .text(d => d.nome);*/
     })
     .catch(error => console.error("Error fetching car data: ", error));
+

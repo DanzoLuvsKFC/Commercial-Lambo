@@ -31,9 +31,10 @@ text {
 
 .Items {
     position: relative;
-    margin-top: -35rem;
+    margin-top: -30rem;
     margin-left: 43rem;
     padding: 5rem;
+    animation: slideInRight 2s;
 }
 
 #chicken{
@@ -41,6 +42,7 @@ text {
     margin-top: -50rem;
     margin-left: 45rem;
     padding: 5rem;
+    animation: slideInRight 2s;
 }
 
 /* Web Page Deco*/
@@ -124,6 +126,7 @@ h2{
     color: #333;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
+    animation: slideIn 2s ease forwards;
 }
 
 h2:hover{
@@ -137,6 +140,7 @@ h2:hover{
     padding-bottom: 0rem; 
     margin-top: 0rem;
     margin-bottom: 0rem;
+    animation: slideIn 2s ease forwards;
 }
 
 
@@ -151,6 +155,7 @@ h2:hover{
     padding-bottom: 0rem; 
     margin-top: 7rem;
     margin-bottom: 0rem;
+    animation: slideIn 1s ease forwards;
 }
 
 #CarTitles{
@@ -160,6 +165,7 @@ h2:hover{
     padding-bottom: 0rem; 
     margin-top: -15rem;
     margin-bottom: 8rem;
+    animation: slideIn 2s;
 }  
 
 #CarTitle:hover{
@@ -188,6 +194,7 @@ margin-bottom: 10rem;
     padding-bottom: 0rem; 
     margin-top: 0rem;
     margin-bottom: 0rem;
+    animation: slideInRight 3.5s ease forwards;
 }
 
 #SecondTitle:hover{
@@ -207,14 +214,17 @@ p{
     margin-right: 15rem;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
-    font-size: 1.3rem
+    font-size: 1.3rem;
+    animation: slideInRight 2.3s ease forwards;
+
 }
 
 .Content-Image{
     position: relative;
-    left: 10rem;
-    width: 40rem;
-    height: 20rem;
+    left: 15rem;
+    width: 50rem;
+    height: 27rem;
+    animation: slideIn 5s ease forwards;
 }
 
 #HomeImage {
@@ -224,26 +234,39 @@ p{
     z-index: -1;
     width: 35rem;
     height: 40rem;
+    animation: slideInRight 3s ease forwards; /* Apply the animation */
 }
 
 #HomeImage3 {
     position: absolute;
-    margin-top: 10rem;
+    margin-top: 5rem;
     margin-left: 50rem;
     z-index: -1;
     width: 35rem;
     height: 40rem;
+    animation: slideInRight 2s
+
 }
 
 #HomeImage4 {
     position: absolute;
-    margin-top: 3rem;
-    margin-left: 55rem;
+    margin-top: 1rem;
+    margin-left: 50rem;
+    z-index: -1;
+    width: 40rem;
+    height: 45rem;
+    animation: slideInRight 2s;
+}
+
+#Green {
+    position: absolute;
+    margin-top: 9rem;
+    margin-left: 54rem;
     z-index: -1;
     width: 30rem;
     height: 35rem;
+    animation: slideInRight 2s;
 }
-
 
 #Home2{
     position: absolute;
@@ -252,6 +275,7 @@ p{
     z-index: -1;
     width: 35rem;
     height: 40rem;
+    animation: slideIn 4s ease forwards; 
 }
 
 #Home3{
@@ -261,25 +285,71 @@ p{
     z-index: -1;
     width: 35rem;
     height: 40rem;
+    animation: slideIn 3s;
 }
 
 #Home4{
     position: absolute;
-    margin-top: 33rem;
-    margin-left: 10rem;
+    margin-top: 28rem;
+    margin-left: 5rem;
     z-index: -1;
-    width: 35rem;
-    height: 40rem;
+    width: 40rem;
+    height: 45rem;
+    animation: slideIn 3s;
+}
+
+#Green4{
+    position: absolute;
+    margin-top: 30rem;
+    margin-left: 13rem;
+    z-index: -1;
+    width: 30rem;
+    height: 35rem;
+    animation: slideIn 3s;
 }
 
 #Home5{
     position: absolute;
     margin-top: 53rem;
-    margin-left: 60rem;
+    margin-left: 47rem;
     z-index: -1;
-    width: 35rem;
-    height: 40rem;
+    width: 40rem;
+    height: 45rem;
+    animation: slideInRight 5s;
 }
+
+#Green5{
+    position: absolute;
+    margin-top: 51rem;
+    margin-left: 62rem;
+    z-index: -1;
+    width: 27rem;
+    height: 32rem;
+    animation: slideInRight 5s;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%); /* Start from the left */
+        opacity: 0; /* Start with low opacity */
+    }
+    to {
+        transform: translateX(0); /* Move to its original position */
+        opacity: 1; /* End with full opacity */
+    }
+}
+ 
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%); /* Start from the right */
+        opacity: 0; /* Start with low opacity */
+    }
+    to {
+        transform: translateX(0); /* Move to its original position */
+        opacity: 1; /* End with full opacity */
+    }
+}
+
 
 
 

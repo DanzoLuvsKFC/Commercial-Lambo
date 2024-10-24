@@ -140,12 +140,14 @@ h2:hover{
     padding-bottom: 0rem; 
     margin-top: 0rem;
     margin-bottom: 0rem;
-    animation: slideIn 2s ease forwards;
-}
 
+    background: linear-gradient(to right, #000000, #fbcd5d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 300%;
 
-#HomeTitle:hover{
-    color: #fbcd5d
+    animation: slideIn 2s ease forwards, colorChange 5s linear infinite alternate;
 }
 
 #CarTitle{
@@ -205,6 +207,7 @@ margin-bottom: 10rem;
 a {
     text-decoration: none; /* Removes the underline */
 }
+
 
 p{
     margin-left: 15rem;
@@ -346,6 +349,15 @@ p{
     to {
         transform: translateX(0); /* Move to its original position */
         opacity: 1; /* End with full opacity */
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
     }
 }
 

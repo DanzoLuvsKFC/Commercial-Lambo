@@ -39,8 +39,8 @@ text {
 
 #chicken{
     position: relative;
-    margin-top: -50rem;
-    margin-left: 45rem;
+    margin-top: -17rem;
+    margin-left: 43rem;
     padding: 5rem;
     animation: slideInRight 2s;
 }
@@ -64,8 +64,6 @@ body {
     font-family: 'Satoshi'; 
     src: url('../Fonts/Satoshi-Medium.otf') format('truetype'); /* The path to your font file */
   }
-  
-
 
   /*NAV BAR*/
 

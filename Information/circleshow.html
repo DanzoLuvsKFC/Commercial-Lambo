@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circle Show</title>
+    <title>Circle Show - Explore Car Types</title>
+    <meta name="description" content="Discover various types of cars and click to view more details. Explore our interactive visualizations using D3.js.">
+    <meta name="keywords" content="cars, car types, D3.js, visualization, interactive, automotive">
+    <meta name="author" content="Your Name">
+    <link rel="canonical" href="https://www.yourwebsite.com/circle-show">
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <link rel="stylesheet" href="../CSS/styles.css">
-    <script src="../Scripts/nav.js"></script>
-    <script src="../Scripts/footer.js"></script>
+    <script src="../Scripts/nav.js" defer></script>
+    <script src="../Scripts/footer.js" defer></script>
 </head>
 
 <body>
@@ -18,23 +22,19 @@
         </nav>
     </header>
 
-    <div id="TitleHome">
+    <main>
+        <section id="title-home">
+            <h2 id="car-title">Car Types</h2>
+            <h2 id="car-titles">Click to view cars.</h2>
+        </section>
+
+        <svg id="chicken" width="650" height="650"></svg>
+    </main>
+
+    <script src="../Scripts/app2.js" defer></script>
+    <footer>
         
-        <h2 id="CarTitle">Car Types</h2>
-        </a>
-    </div>
-
-    <div id="TitleHome">
-        
-        <h2 id="CarTitles">Click to view cars.</h2>
-        </a>
-    </div>
-
-    <svg id="chicken" width="650" height="650"></svg>
-
-    <script src="../Scripts/app2.js"></script>
-
-    <footer></footer>
+    </footer>
 </body>
 
 </html>

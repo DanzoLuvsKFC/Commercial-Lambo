@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bar Show</title>
+    <meta name="description" content="Explore the latest trends in car prices with our interactive bar show. Visualize data and make informed decisions.">
+    <meta name="keywords" content="car prices, data visualization, D3.js, bar chart, automotive trends">
+    <meta name="author" content="Your Name or Company Name">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>Car Prices - Interactive Data Visualization</title>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <link rel="stylesheet" href="../CSS/styles.css">
-    <script src="../Scripts/nav.js"></script>
-    <script src="../Scripts/footer.js"></script>
+    <script src="../Scripts/nav.js" defer></script>
+    <script src="../Scripts/footer.js" defer></script>
 </head>
 
 <body>
@@ -18,18 +22,19 @@
         </nav>
     </header>
 
-    <div id="TitleHome">
+    <main>
+        <div id="TitleHome">
+            <h2 id="CarTitle">Car Prices</h2>
+        </div>
+
+        <svg class="Items" width="700" height="700"></svg>
+    </main>
+
+    <script src="../Scripts/app.js" defer></script>
+
+    <footer>
         
-        <h2 id="CarTitle">Car Prices</h2>
-        </a>
-    </div>
-
-
-    <svg class="Items" width="700" height="700"></svg>
-
-    <script src="../Scripts/app.js"></script>
-
-    <footer></footer>
+    </footer>
 
 </body>
 

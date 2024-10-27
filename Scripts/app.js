@@ -1,7 +1,8 @@
 // Fetch car data and create the D3 visualization
-fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas/171/modelos')
-    .then(response => response.json())
-    .then(data => {
+const fetchCarData = async () => {
+    try {
+        const response = await fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas/171/modelos');
+        const data = await response.json();
         console.log(data);
         const carData = data.modelos;
 
@@ -94,7 +95,13 @@ fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas/171/modelos')
             .attr("y", d => y(d.nome) + y.bandwidth() / 2)
             .attr("dy", ".35em")
             .text(d => d.nome);*/
-    })
-    .catch(error => console.error("Error fetching car data:", error));
+
+    } catch (error) {
+        console.error("Error fetching car data:", error);
+    }
+};
+
+fetchCarData();
+
 
 

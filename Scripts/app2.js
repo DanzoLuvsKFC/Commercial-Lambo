@@ -1,7 +1,8 @@
 // Fetch car data and create a chart
-fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas/171/modelos')
-    .then(response => response.json())
-    .then(data => {
+const fetchCarData = async () => {
+    try {
+        const response = await fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas/171/modelos');
+        const data = await response.json();
         const numCircles = data.modelos.length;
 
         // Adjust the radius dynamically based on the number of circles
@@ -25,8 +26,12 @@ fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas/171/modelos')
         });
 
         createChart(carData);
-    })
-    .catch(error => console.error("Error fetching data:", error));
+    } catch (error) {
+        console.error("Error fetching data:", error);
+    }
+};
+
+fetchCarData();
 
 // Function to create the chart
 const createChart = (data) => {
@@ -133,6 +138,7 @@ const createChart = (data) => {
 
     return svg.node();
 };
+
 
 
 

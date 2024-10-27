@@ -1,5 +1,5 @@
 // Create a dynamic footer using JavaScript
-window.onload = function() {
+window.onload = () => {
     // Create footer element
     const footer = document.createElement('footer');
     footer.style.textAlign = "center";

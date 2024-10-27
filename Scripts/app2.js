@@ -1,3 +1,4 @@
+// Fetch car data and create a chart
 fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas/171/modelos')
     .then(response => response.json())
     .then(data => {
@@ -5,7 +6,7 @@ fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas/171/modelos')
 
         // Adjust the radius dynamically based on the number of circles
         const baseRadius = 250;
-        const spacingFactor = 1.2;  // Adjust this for more space between circles
+        const spacingFactor = 1.2;
         const adjustedRadius = (baseRadius + (numCircles * 2)) * spacingFactor;
 
         const centerX = 400;
@@ -27,13 +28,13 @@ fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas/171/modelos')
     })
     .catch(error => console.error("Error fetching data:", error));
 
-function createChart(data) {
+// Function to create the chart
+const createChart = (data) => {
     const width = 800;
     const height = 600;
 
-    // Set an initial transform that fits the whole view
     let currentTransform = [width / 2, height / 2, height];
-    let zoomedIn = false;  // Track if currently zoomed in
+    let zoomedIn = false;
 
     const svg = d3.select("#chicken")
         .attr("viewBox", [0, 0, width, height]);
@@ -49,7 +50,7 @@ function createChart(data) {
         .attr("r", d => d.radius)
         .attr("fill", "#fbcd5d");
 
-    // Add text labels for each circle, display the first two words of the name
+    // Add text labels for each circle
     g.selectAll("text")
         .data(data)
         .join("text")
@@ -57,13 +58,12 @@ function createChart(data) {
         .attr("y", d => d.y)
         .attr("dy", ".35em")
         .attr("text-anchor", "middle")
-        .attr("font-size", "5rem")  // Adjust the font size as needed
-        .attr("font-family", "Arial")  // Set the desired font family
+        .attr("font-size", "5rem")
+        .attr("font-family", "Arial")
         .attr("fill", "black")
         .text(d => {
-            // Extract the first two words of the name
             const words = d.name.split(" ");
-            return words.slice(0, 2).join(" ");  // Join the first two words
+            return words.slice(0, 2).join(" ");
         });
 
     // Tooltip for hover information
@@ -93,48 +93,47 @@ function createChart(data) {
     });
 
     // Zoom in function on click
-    function zoom(d) {
+    const zoom = (d) => {
         if (!zoomedIn) {
             const minScale = 1;
-            const zoomMultiplier = 2.5;  // Adjust this value to control zoom level (lower = less zoom)
-            const scaleFactor = Math.max(d.radius * zoomMultiplier, minScale);  // Use the multiplier for less zoom
+            const zoomMultiplier = 2.5;
+            const scaleFactor = Math.max(d.radius * zoomMultiplier, minScale);
             const i = d3.interpolateZoom(currentTransform, [d.x, d.y, scaleFactor]);
 
             g.transition()
                 .duration(i.duration)
                 .attrTween("transform", () => t => transform(currentTransform = i(t)));
 
-            zoomedIn = true;  // Mark as zoomed in
+            zoomedIn = true;
         } else {
-            zoomOut();  // If already zoomed in, zoom out on click
+            zoomOut();
         }
-    }
+    };
 
     // Zoom out function to reset the view
-    function zoomOut() {
+    const zoomOut = () => {
         const i = d3.interpolateZoom(currentTransform, [width / 2, height / 2, height]);
 
         g.transition()
             .duration(i.duration)
             .attrTween("transform", () => t => transform(currentTransform = i(t)));
 
-        zoomedIn = false;  // Mark as zoomed out
-    }
+        zoomedIn = false;
+    };
 
     // Function to calculate the transform string for zooming
-    function transform([x, y, r]) {
-        return `
-          translate(${width / 2}, ${height / 2})
-          scale(${height / r})
-          translate(${-x}, ${-y})
-        `;
-    }
+    const transform = ([x, y, r]) => `
+        translate(${width / 2}, ${height / 2})
+        scale(${height / r})
+        translate(${-x}, ${-y})
+    `;
 
     // Add click event listeners to trigger the zoom in and zoom out
-    circles.on("click", (event, d) => zoom(d));  // Zoom in/out on click
+    circles.on("click", (event, d) => zoom(d));
 
     return svg.node();
-}
+};
+
 
 
 

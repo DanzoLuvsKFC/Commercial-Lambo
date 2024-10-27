@@ -1,7 +1,7 @@
 // Fetch car data and create the D3 visualization
 fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas/171/modelos')
-    .then((response) => response.json())
-    .then((data) => {
+    .then(response => response.json())
+    .then(data => {
         console.log(data);
         const carData = data.modelos;
 
@@ -40,8 +40,8 @@ fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas/171/modelos')
             .style("padding", "8px")
             .style("display", "none")
             .style("pointer-events", "none")
-            .style("font-family", "Pangchan")  // Change the font family
-            .style("font-size", "1000px");  
+            .style("font-family", "Pangchan")
+            .style("font-size", "12px");
 
         // Add bars
         g.selectAll(".bar")
@@ -52,37 +52,37 @@ fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas/171/modelos')
             .attr("y", d => y(d.nome))
             .attr("width", d => x(d.codigo))
             .attr("height", y.bandwidth())
-            .on("mouseover", function(event, d) {
+            .on("mouseover", (event, d) => {
                 tooltip.style("display", "block")
                     .html(`<strong>Model:</strong> ${d.nome}<br><strong>Code:</strong> ${d.codigo}`)
-                    .style("left", (event.pageX + 10) + "px")
-                    .style("top", (event.pageY - 20) + "px");
-                d3.select(this).attr("fill", "orange"); // Highlight bar
+                    .style("left", `${event.pageX + 10}px`)
+                    .style("top", `${event.pageY - 20}px`);
+                d3.select(event.currentTarget).attr("fill", "orange");
             })
-            .on("mousemove", function(event) {
-                tooltip.style("left", (event.pageX + 10) + "px")
-                    .style("top", (event.pageY - 20) + "px");
+            .on("mousemove", (event) => {
+                tooltip.style("left", `${event.pageX + 10}px`)
+                    .style("top", `${event.pageY - 20}px`);
             })
-            .on("mouseout", function() {
+            .on("mouseout", (event) => {
                 tooltip.style("display", "none");
-                d3.select(this).attr("fill", "steelblue"); // Revert bar color
+                d3.select(event.currentTarget).attr("fill", "steelblue");
             });
 
         // Add the "Price Range" label
         svg.append("text")
-            .attr("x", width / 2 + 100) // Center it above the chart (adjust based on your layout)
-            .attr("y", 30) // Adjust this value to move it up or down
-            .attr("text-anchor", "middle") // Center the text
-            .attr("font-size", "16px") // Font size for the label
-            .attr("font-weight", "bold") // Make the text bold
-            .text("Price Range"); // The label text
+            .attr("x", width / 2 + 100)
+            .attr("y", 30)
+            .attr("text-anchor", "middle")
+            .attr("font-size", "16px")
+            .attr("font-weight", "bold")
+            .text("Price Range");
 
         // Placeholder for images next to bars
         /*g.selectAll(".car-image")
             .data(carData)
             .enter().append("image")
-            .attr("xlink:href", d => `../Images/${d.nome}.jpeg`) // Replace with actual image URLs
-            .attr("x", -50) // Position to the left of the bars
+            .attr("xlink:href", d => `../Images/${d.nome}.jpeg`)
+            .attr("x", -50)
             .attr("y", d => y(d.nome) + (y.bandwidth() / 2) - 20)
             .attr("class", "car-image");*/
 
@@ -95,5 +95,6 @@ fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas/171/modelos')
             .attr("dy", ".35em")
             .text(d => d.nome);*/
     })
-    .catch(error => console.error("Error fetching car data: ", error));
+    .catch(error => console.error("Error fetching car data:", error));
+
 

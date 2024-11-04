@@ -1,0 +1,58 @@
+/* ------------------------------NAV STUFF---------------------------------------- */
+
+head{
+    display: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: transparent;
+    margin: 0;
+    z-index: 10;
+}
+
+body{
+    margin: 0;
+}
+
+nav {
+    margin-top: 2.0rem;
+    margin-bottom: 2.0rem;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.nav-link {
+    color: rgb(42, 42, 42);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Pangchan';
+    padding: 1.5rem;
+}
+
+#nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------NAV STUFF---------------------------------------- */
+/* ------------------------------PAGE STUFF---------------------------------------- */
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    
+}
+
+

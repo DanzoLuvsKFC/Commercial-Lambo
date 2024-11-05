@@ -297,6 +297,53 @@ a {
     opacity: 60%;
 }
 
+/* ------------------------------SECONDARY SECTION---------------------------------------- */
+
+.ThirdSection {
+    background-color: #FAFAFA; 
+    padding: 10px; 
+    display: flex;                    
+    align-items: center;         
+    justify-content: center;   
+    flex-wrap: wrap; 
+    height: 100vh;
+}
+
+.ContentDisplay {
+    margin: 20px;
+    
+}
+
+.ContentTitle {
+    margin-top: 10px;
+    font-family: 'Satoshi';
+    font-size: 50px;
+    font-weight: bold;
+    color: #181818;
+}
+
+.ContentDescription {
+    margin-top: 10px;
+    font-family: "Satoshi2";
+    font-size: 25px;
+    
+}
 
 
+.ExploreLink {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: #181818;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: color 0.5s ease, background-color 0.5s ease;
+    font-family: "Pangchan";
+}
+
+.ExploreLink:hover {
+    background-color: rgb(204, 5, 5);
+    color: #FAFAFA;
+}
 

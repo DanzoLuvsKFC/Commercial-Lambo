@@ -1,3 +1,20 @@
+/* ------------------------------GENERAL TINGS---------------------------------------- */
+
+@font-face {
+    font-family: 'Satoshi'; 
+    src: url('../Fonts/Satoshi-Black.otf') format('truetype'); 
+  }
+
+  @font-face {
+    font-family: 'Satoshi2'; 
+    src: url('../Fonts/Satoshi-Medium.otf') format('truetype'); 
+  }
+
+  @font-face {
+    font-family: 'Pangchan'; 
+    src: url('../Fonts/Pangchan.otf') format('truetype'); 
+  }
+
 /* ------------------------------NAV STUFF---------------------------------------- */
 
 head{
@@ -25,11 +42,14 @@ nav {
 }
 
 .nav-link {
-    color: rgb(42, 42, 42);
+    color: #FAFAFA;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Pangchan';
     padding: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: bold;
 }
 
 #nav-links {
@@ -39,9 +59,10 @@ nav {
     align-items: center;
     margin: 0;
     padding: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
-/* ------------------------------NAV STUFF---------------------------------------- */
 /* ------------------------------PAGE STUFF---------------------------------------- */
 
 video {
@@ -54,5 +75,68 @@ video {
     object-fit: cover;
     
 }
+
+/* ------------------------------FIRST SECTION---------------------------------------- */
+
+.MainText{
+    position: absolute; 
+    top: 75%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    z-index: 1;
+}
+
+.MainTitle{
+    justify-content: center;
+    color: #FAFAFA;
+    font-weight: bold;
+    font-family: "Satoshi2";
+    font-size: 95px;
+}
+
+.MainTitleDesc{
+    justify-content: center;
+    color: #FAFAFA;
+    font-family: "Pangchan";
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.SecondaryText{
+    position: absolute; 
+    top: 64%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    z-index: 1;
+}
+
+.ExploreButton{
+    position: absolute; 
+    top: 90%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    z-index: 1;
+}
+
+.ExploreText{
+    justify-content: center;
+    color: #FAFAFA;
+    font-family: "Pangchan";
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.ExploreText:hover{
+    color: rgb(204, 5, 5);
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+a{
+    text-decoration: none;
+}
+
 
 

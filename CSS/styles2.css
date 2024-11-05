@@ -110,24 +110,24 @@ nav {
 /* ------------------------------FOOTER STUFF---------------------------------------- */
 
 .custom-footer {
-    background-color: #181818;
-    color: #FAFAFA;
+    background-color: transparent;
+    color: #181818;
 }
 
 .custom-footer .contact-info-1 {
-    font-family: "Satoshi"; /* Your original font */
+    font-family: "Satoshi"; 
     font-weight: 500;
     margin: 20px;
 }
 
 .custom-footer .contact-info-2 {
-    font-family: "Satoshi2"; /* New font for the second paragraph */
+    font-family: "Satoshi2"; 
     font-weight: 400;
     margin: 20px;
 }
 
 .custom-footer .contact-info-3 {
-    font-family: "Satoshi2"; /* New font for the third paragraph */
+    font-family: "Satoshi2"; 
     font-weight: 300;
     margin: 20px;
 }

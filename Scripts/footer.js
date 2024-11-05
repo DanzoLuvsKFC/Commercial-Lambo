@@ -3,8 +3,8 @@ window.onload = () => {
     footer.classList.add('custom-footer');
     footer.style.textAlign = "center";
     footer.style.padding = "20px";
-    footer.style.backgroundColor = "#181818";
-    footer.style.color = "#fff";
+    footer.style.backgroundColor = "transparent";
+    footer.style.color = "#181818";
 
     // Paragraph 1
     const contactInfo1 = document.createElement('p');
@@ -30,17 +30,17 @@ window.onload = () => {
     const socialMedias = [
         { 
             link: "https://www.facebook.com/Lamborghini", 
-            imgSrc: `${window.location.origin}/Images/Facebook Icon.png`,  
-            altText: "Tiktok"
+            imgSrc: `${window.location.origin}/Images/facebook (1).png`,  
+            altText: "Facebook"
         },
         { 
             link: "https://www.instagram.com/lamborghini?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", 
-            imgSrc: `${window.location.origin}/Images/Insta%20Logo.png`,  
+            imgSrc: `${window.location.origin}/Images/instagram.png`,  
             altText: "Instagram"
         },
         { 
             link: "https://www.tiktok.com/@lamborghini?is_from_webapp=1&sender_device=pc", 
-            imgSrc: `${window.location.origin}/Images/TiktokLogo.png`,  
+            imgSrc: `${window.location.origin}/Images/tiktok.png`,  
             altText: "Tiktok"
         }
         

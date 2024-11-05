@@ -4,7 +4,7 @@ window.onload = () => {
     const footer = document.createElement('footer');
     footer.style.textAlign = "center";
     footer.style.padding = "20px";
-    footer.style.backgroundColor = "#333";
+    footer.style.backgroundColor = "#181818";
     footer.style.color = "#fff";
 
     // Create contact information text

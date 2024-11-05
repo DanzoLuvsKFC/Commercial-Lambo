@@ -27,7 +27,9 @@ header {
     top: 0;
     background-color: transparent;
     margin: 0;
+    padding: 0;
     z-index: 10;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body{
@@ -35,8 +37,8 @@ body{
 }
 
 nav {
-    margin-top: 2.0rem;
-    margin-bottom: 2.0rem;
+    margin: 0;
+    padding: 20px;
     background-color: transparent;
     z-index: 10;
 }
@@ -63,6 +65,18 @@ nav {
     margin-right: 2rem;
 }
 
+.scrolled{
+    background-color: #FAFAFA; 
+    color: #FAFAFA;
+    transition: background-color 0.3s ease;
+}
+
+.scrolled .nav-link {
+    color: #060606; 
+}
+
+
+
 /* ------------------------------PAGE STUFF---------------------------------------- */
 
 video {
@@ -78,14 +92,7 @@ video {
 
 /* ------------------------------FIRST SECTION---------------------------------------- */
 
-.SecondaryText{
-    position: absolute; 
-    top: 64%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: #FAFAFA; 
-    z-index: 1;
-}
+
 
 .MainSection {
     position: relative;
@@ -126,6 +133,15 @@ video {
     font-family: "Pangchan";
     font-weight: bold;
     font-size: 24px;
+}
+
+.SecondaryText{
+    position: absolute; 
+    top: 64%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: #FAFAFA; 
+    z-index: 1;
 }
 
 .ExploreButton {

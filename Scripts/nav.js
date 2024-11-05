@@ -49,3 +49,20 @@ const createMenuItems = () => {
 
 // Initialize menu creation when DOM is fully loaded
 document.addEventListener('DOMContentLoaded', createMenuItems);
+
+document.addEventListener('DOMContentLoaded', createMenuItems);
+
+// New function to change navbar background on scroll
+const updateNavbarOnScroll = () => {
+    const nav = document.querySelector('nav');
+    const secondSection = document.querySelector('.SecondarySection');
+    const secondSectionTop = secondSection.offsetTop;
+
+    if (window.scrollY >= secondSectionTop) {
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+};
+
+window.addEventListener('scroll', updateNavbarOnScroll);

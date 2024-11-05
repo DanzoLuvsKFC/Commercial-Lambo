@@ -311,6 +311,7 @@ a {
 
 .ContentDisplay {
     margin: 20px;
+    display: flex;
     
 }
 
@@ -329,6 +330,23 @@ a {
     
 }
 
+.ContentText{
+    position: relative;
+    left: 50px;
+    margin-right: 100px;
+}
+
+.ContentImage {
+    width: 388px;
+    height: 571px; 
+    overflow: hidden; 
+}
+
+.ContentImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
 
 .ExploreLink {
     display: inline-block;

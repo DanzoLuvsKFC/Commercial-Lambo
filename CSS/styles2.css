@@ -75,8 +75,6 @@ nav {
     color: #060606; 
 }
 
-
-
 /* ------------------------------PAGE STUFF---------------------------------------- */
 
 video {
@@ -91,8 +89,6 @@ video {
 }
 
 /* ------------------------------FIRST SECTION---------------------------------------- */
-
-
 
 .MainSection {
     position: relative;
@@ -226,6 +222,7 @@ a {
     margin: 0;
     font-family: "Satoshi2";
     font-size: 25px;
+    opacity: 60%;
 }
 
 

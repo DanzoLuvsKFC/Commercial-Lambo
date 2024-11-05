@@ -15,6 +15,32 @@
     src: url('../Fonts/Pangchan.otf') format('truetype'); 
   }
 
+/* ------------------------------RESPONSIVE STUFF---------------------------------------- */
+
+@media (max-width: 901px) { 
+
+/* ------------------------------RESPONSIVE NAV STUFF---------------------------------------- */
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .nav-link {
+        padding: 5rem; 
+    }
+
+    li {
+        padding-top: 1rem;
+    }
+
+/* ------------------------------RESPONSIVE SECTIONS STUFF---------------------------------------- */
+
+.SecondarySection{
+    text-align: center;
+}
+
+}
+
 /* ------------------------------NAV STUFF---------------------------------------- */
 
 head{
@@ -37,6 +63,10 @@ body{
 }
 
 nav {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: center;
     margin: 0;
     padding: 20px;
     background-color: transparent;
@@ -57,8 +87,10 @@ nav {
 #nav-links {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    align-content: space-evenly;
     margin: 0;
     padding: 0;
     margin-left: 2rem;
@@ -94,6 +126,7 @@ video {
     position: relative;
     height: 100vh; 
     overflow: hidden; 
+    text-align: center;
 }
 
 .MainGraphic video {
@@ -129,6 +162,7 @@ video {
     font-family: "Pangchan";
     font-weight: bold;
     font-size: 24px;
+
 }
 
 .SecondaryText{
@@ -174,7 +208,8 @@ a {
     padding: 10px; 
     display: flex;                    
     align-items: center;         
-    justify-content: center;    
+    justify-content: center;   
+    flex-wrap: wrap; 
                 
 }
 

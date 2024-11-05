@@ -104,13 +104,32 @@ nav {
 }
 
 .scrolled .nav-link {
-    color: #060606; 
+    color: #181818; 
 }
 
 /* ------------------------------FOOTER STUFF---------------------------------------- */
 
-footer {
-    color: #060606;
+.custom-footer {
+    background-color: #181818;
+    color: #FAFAFA;
+}
+
+.custom-footer .contact-info-1 {
+    font-family: "Satoshi"; /* Your original font */
+    font-weight: 500;
+    margin: 20px;
+}
+
+.custom-footer .contact-info-2 {
+    font-family: "Satoshi2"; /* New font for the second paragraph */
+    font-weight: 400;
+    margin: 20px;
+}
+
+.custom-footer .contact-info-3 {
+    font-family: "Satoshi2"; /* New font for the third paragraph */
+    font-weight: 300;
+    margin: 20px;
 }
 
 /* ------------------------------PAGE STUFF---------------------------------------- */
@@ -190,15 +209,20 @@ video {
 }
 
 .ExploreText {
+    background-color: rgb(204, 5, 5);
     justify-content: center;
     color: #FAFAFA;
     font-family: "Pangchan";
     font-weight: bold;
     font-size: 18px;
+    padding: 0.5rem;
+    border-radius: 10px;
 }
 
 .ExploreText:hover {
     color: rgb(204, 5, 5);
+    background-color: transparent;
+    border-color: rgb(204, 5, 5);
     transition: color 0.5s ease, background-color 0.5s ease;
 }
 
@@ -226,6 +250,7 @@ a {
 
 .ColdQuote{
     margin-bottom: 150px;
+    color: #181818;
 
 }
 
@@ -234,6 +259,7 @@ a {
     font-family: 'Satoshi';
     font-size: 50px;
     font-weight: bold;
+    
 }
 
 .Quote1{

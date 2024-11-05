@@ -78,101 +78,42 @@ video {
 
 /* ------------------------------FIRST SECTION---------------------------------------- */
 
-.MainText{
-    position: absolute; 
-    top: 75%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: white; 
-    z-index: 1;
-}
-
-.MainTitle{
-    justify-content: center;
-    color: #FAFAFA;
-    font-weight: bold;
-    font-family: "Satoshi2";
-    font-size: 95px;
-}
-
-.MainTitleDesc{
-    justify-content: center;
-    color: #FAFAFA;
-    font-family: "Pangchan";
-    font-weight: bold;
-    font-size: 24px;
-}
-
 .SecondaryText{
     position: absolute; 
     top: 64%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    color: white; 
+    color: #FAFAFA; 
     z-index: 1;
 }
 
-.ExploreButton{
-    position: absolute; 
-    top: 90%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: white; 
-    z-index: 1;
-}
-
-.ExploreText{
-    justify-content: center;
-    color: #FAFAFA;
-    font-family: "Pangchan";
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.ExploreText:hover{
-    color: rgb(204, 5, 5);
-    transition: color 0.5s ease, background-color 0.5s ease;
-}
-
-a{
-    text-decoration: none;
-}
-
-/* ------------------------------SECOND SECTION---------------------------------------- */
-/* This will keep your video filling the viewport */
 .MainSection {
     position: relative;
-    height: 100vh; /* Make this section fill the viewport height */
-    overflow: hidden; /* Hide any overflow from the video */
+    height: 100vh; 
+    overflow: hidden; 
 }
 
 .MainGraphic video {
-    position: absolute; /* Position video absolutely within the section */
+    position: absolute; 
     top: 0;
     left: 0;
-    z-index: -1; /* Keep the video behind other content */
+    z-index: -1;
     width: 100vw;
     height: 100vh;
-    object-fit: cover; /* Maintain aspect ratio */
+    object-fit: cover; 
 }
 
-.SecondarySection {
-    background-color: white; /* Background color for the secondary section */
-    padding: 20px; /* Add some padding for the content */
-    /* Other styles as needed */
-}
-
-/* Other styles you already have */
 .MainText {
     position: absolute; 
     top: 75%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    color: white; 
+    color: #FAFAFA; 
     z-index: 1;
 }
 
 .MainTitle {
+    justify-content: center;
     color: #FAFAFA;
     font-weight: bold;
     font-family: "Satoshi2";
@@ -180,6 +121,7 @@ a{
 }
 
 .MainTitleDesc {
+    justify-content: center;
     color: #FAFAFA;
     font-family: "Pangchan";
     font-weight: bold;
@@ -191,11 +133,12 @@ a{
     top: 90%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    color: white; 
+    color: #FAFAFA; 
     z-index: 1;
 }
 
 .ExploreText {
+    justify-content: center;
     color: #FAFAFA;
     font-family: "Pangchan";
     font-weight: bold;
@@ -209,6 +152,64 @@ a{
 
 a {
     text-decoration: none;
+}
+
+/* ------------------------------SECONDARY SECTION---------------------------------------- */
+
+.SecondarySection {
+
+    background-color: #FAFAFA; 
+    padding: 10px; 
+    display: flex;                    
+    align-items: center;         
+    justify-content: center;    
+                
+}
+
+.Portrait {
+    margin: 20px;
+    
+}
+
+.ColdQuote{
+    margin-bottom: 150px;
+
+}
+
+.Quote{
+    margin: 0;
+    font-family: 'Satoshi';
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.Quote1{
+    margin: 0;
+    font-family: 'Satoshi';
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.Quote2{
+    margin: 0;
+    margin-bottom: 50px;
+    font-family: 'Satoshi';
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.CeoName{
+    margin-top: 40px;
+    font-family: "Satoshi2";
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.TitleFlex{
+    margin: 0;
+    font-family: "Satoshi2";
+    font-size: 25px;
 }
 
 

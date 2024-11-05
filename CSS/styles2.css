@@ -138,5 +138,79 @@ a{
     text-decoration: none;
 }
 
+/* ------------------------------SECOND SECTION---------------------------------------- */
+/* This will keep your video filling the viewport */
+.MainSection {
+    position: relative;
+    height: 100vh; /* Make this section fill the viewport height */
+    overflow: hidden; /* Hide any overflow from the video */
+}
+
+.MainGraphic video {
+    position: absolute; /* Position video absolutely within the section */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Keep the video behind other content */
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.SecondarySection {
+    background-color: white; /* Background color for the secondary section */
+    padding: 20px; /* Add some padding for the content */
+    /* Other styles as needed */
+}
+
+/* Other styles you already have */
+.MainText {
+    position: absolute; 
+    top: 75%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    z-index: 1;
+}
+
+.MainTitle {
+    color: #FAFAFA;
+    font-weight: bold;
+    font-family: "Satoshi2";
+    font-size: 95px;
+}
+
+.MainTitleDesc {
+    color: #FAFAFA;
+    font-family: "Pangchan";
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.ExploreButton {
+    position: absolute; 
+    top: 90%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    z-index: 1;
+}
+
+.ExploreText {
+    color: #FAFAFA;
+    font-family: "Pangchan";
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.ExploreText:hover {
+    color: rgb(204, 5, 5);
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+
 
 

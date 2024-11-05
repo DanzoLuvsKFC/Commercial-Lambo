@@ -15,6 +15,11 @@
     src: url('../Fonts/Pangchan.otf') format('truetype'); 
   }
 
+  @font-face {
+    font-family: 'Gambarino'; 
+    src: url('../Fonts/Gambarino-Regular.otf') format('truetype'); 
+  }
+
 /* ------------------------------RESPONSIVE STUFF---------------------------------------- */
 
 @media (max-width: 901px) { 
@@ -280,7 +285,7 @@ a {
 
 .CeoName{
     margin-top: 40px;
-    font-family: "Satoshi2";
+    font-family: "Gambarino";
     font-size: 40px;
     margin-bottom: 0;
 }

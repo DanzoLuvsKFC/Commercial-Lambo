@@ -3,7 +3,7 @@ window.onload = () => {
     footer.classList.add('custom-footer');
     footer.style.textAlign = "center";
     footer.style.padding = "20px";
-    footer.style.backgroundColor = "transparent";
+    footer.style.backgroundColor = "#FAFAFA";
     footer.style.color = "#181818";
 
     // Paragraph 1

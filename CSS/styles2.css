@@ -46,6 +46,28 @@
 
 }
 
+@media (max-width: 938px) {
+    .ContentDisplay {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .ContentText {
+        width: 100%; 
+        margin-right: 0;
+        left: 0;
+        text-align: center; 
+    }
+    
+    .ContentImage {
+        width: 100%; 
+        height: auto; 
+        margin-top: 20px; 
+    }
+
+    
+}
+
 /* ------------------------------NAV STUFF---------------------------------------- */
 
 head{
@@ -84,8 +106,7 @@ nav {
     font-size: 15px;
     font-family: 'Pangchan';
     padding: 1.5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 15px;
     font-weight: bold;
 }
 
@@ -248,14 +269,18 @@ a {
                 
 }
 
-.Portrait {
-    margin: 20px;
+.Portrait img {
+    margin-top: 20px;
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
     
 }
 
 .ColdQuote{
     margin-bottom: 150px;
     color: #181818;
+    margin: 30px;
 
 }
 
@@ -297,22 +322,21 @@ a {
     opacity: 60%;
 }
 
-/* ------------------------------SECONDARY SECTION---------------------------------------- */
+/* ------------------------------THIRD SECTION---------------------------------------- */
 
 .ThirdSection {
     background-color: #FAFAFA; 
-    padding: 10px; 
+    padding: 30px; 
     display: flex;                    
     align-items: center;         
     justify-content: center;   
     flex-wrap: wrap; 
-    height: 100vh;
+
 }
 
 .ContentDisplay {
-    margin: 20px;
     display: flex;
-    
+    align-items: center;
 }
 
 .ContentTitle {
@@ -327,19 +351,26 @@ a {
     margin-top: 10px;
     font-family: "Satoshi2";
     font-size: 25px;
-    
+    justify-content: center;
+    align-items: center;
 }
 
 .ContentText{
+    width: 400px; 
+    min-height: 400px;
     position: relative;
-    left: 50px;
-    margin-right: 100px;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .ContentImage {
     width: 388px;
     height: 571px; 
     overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ContentImage img {
@@ -351,7 +382,7 @@ a {
 .ExploreLink {
     display: inline-block;
     margin-top: 10px;
-    padding: 8px 16px;
+    padding: 8px ;
     background-color: transparent;
     color: #181818;
     text-decoration: none;

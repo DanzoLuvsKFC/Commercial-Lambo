@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', createMenuItems);
 // New function to change navbar background on scroll
 const updateNavbarOnScroll = () => {
     const nav = document.querySelector('nav');
-    const secondSection = document.querySelector('.SecondarySection', 'ThirdSection');
+    const secondSection = document.querySelector('.SecondarySection');
     const secondSectionTop = secondSection.offsetTop;
 
     if (window.scrollY >= secondSectionTop) {

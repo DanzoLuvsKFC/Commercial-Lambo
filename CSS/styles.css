@@ -62,7 +62,7 @@ body {
 
 @font-face {
     font-family: 'Satoshi'; 
-    src: url('../Fonts/Satoshi-Medium.otf') format('truetype'); /* The path to your font file */
+    src: url('../Fonts/Satoshi-Black.otf') format('truetype'); /* The path to your font file */
   }
 
   /*NAV BAR*/

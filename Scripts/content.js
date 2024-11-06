@@ -2,21 +2,21 @@
 document.addEventListener("DOMContentLoaded", () => {
     const contentData = [
         {
-            title: "Explore Models",
+            title: "Explore Car Models",
             img: "Images/Greenie.jpeg" ,
-            description: "Description for content piece 1",
+            description: "View all the different types of available car models presented through eye-catching visuals.",
             link: "Information/data.html"
         },
         {
             title: "Designing Lamborghini",
             img: "Images/Yello.jpeg",
-            description: "Description for content piece 2",
+            description: "See how the website was developed and constructed into what it is today.",
             link: "Design/design&research.html"
         },
         {
             title: "Application of Theory",
             img: "Images/Greya.jpeg",
-            description: "Description for content piece 3",
+            description: "See all of the work and research that was conducted to develop this website.",
             link: "Theory/dv.html"
         }
     ];
@@ -40,5 +40,5 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initialize with the first content
     updateContent();
     // Change content every 8 seconds
-    setInterval(updateContent, 5000);
+    setInterval(updateContent, 8000);
 });

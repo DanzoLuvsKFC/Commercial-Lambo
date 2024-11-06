@@ -38,6 +38,7 @@
         padding-top: 1rem;
     }
 
+
 /* ------------------------------RESPONSIVE SECTIONS STUFF---------------------------------------- */
 
 .SecondarySection{
@@ -95,7 +96,6 @@ nav {
     row-gap: 30px;
     justify-content: center;
     margin: 0;
-    padding: 20px;
     background-color: transparent;
     z-index: 10;
 }
@@ -119,8 +119,7 @@ nav {
     align-content: space-evenly;
     margin: 0;
     padding: 0;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    
 }
 
 .scrolled{
@@ -271,6 +270,7 @@ a {
 
 .Portrait img {
     margin-top: 20px;
+    margin-bottom: 30PX;
     max-width: 100%; 
     height: auto; 
     display: block; 

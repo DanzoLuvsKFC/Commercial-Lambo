@@ -69,3 +69,5 @@ const updateNavbarOnScroll = () => {
 window.addEventListener('scroll', updateNavbarOnScroll);
 
 
+
+

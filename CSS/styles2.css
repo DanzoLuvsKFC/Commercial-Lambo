@@ -345,7 +345,7 @@ a {
 /* ------------------------------THIRD SECTION---------------------------------------- */
 
 .ThirdSection {
-    background-color: #FAFAFA;
+    background-color: #a00c1c;
     padding: 30px;
     display: flex;
     align-items: center;
@@ -357,20 +357,25 @@ a {
 .ContentDisplay {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .ContentTitle {
     margin-top: 10px;
+    margin-bottom: 35px;
     font-family: 'Satoshi';
     font-size: 50px;
     font-weight: bold;
-    color: #181818;
+    color: #FAFAFA;
 }
 
 .ContentDescription {
+    width: 350PX;
     margin-top: 10px;
+    margin-bottom: 0px;
     font-family: "Satoshi2";
     font-size: 25px;
+    color: #FAFAFA;
     justify-content: center;
     align-items: center;
 }
@@ -401,18 +406,18 @@ a {
 
 .ExploreLink {
     display: inline-block;
-    margin-top: 10px;
-    padding: 8px;
+    font-size: 20px;
+    margin-top: 45px;
     background-color: transparent;
-    color: #181818;
+    color: #FAFAFA;
     text-decoration: none;
     border-radius: 10px;
     transition: color 0.5s ease, background-color 0.5s ease;
-    font-family: "Pangchan";
+    font-family: "Satoshi";
 }
 
 .ExploreLink:hover {
-    background-color: rgb(204, 5, 5);
+    /* background-color: #FAFAFA; */
     color: #FAFAFA;
 }
 
@@ -448,7 +453,7 @@ a {
         font-size: 74px;
     }
 
-    .MainTitleDesc{
+    .MainTitleDesc {
         font-size: 20px;
     }
 

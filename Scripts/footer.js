@@ -30,12 +30,12 @@ window.onload = () => {
     const socialMedias = [
         { 
             link: "https://www.facebook.com/Lamborghini", 
-            imgSrc: "/Commercial-Lambo/Images/facebook (1).png",  
+            imgSrc: "https://danzoluvskfc.github.io/Commercial-Lambo/Images/facebook (1).png",  
             altText: "Facebook"
         },
         { 
             link: "https://www.instagram.com/lamborghini?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", 
-            imgSrc: "/Commercial-Lambo/Images/instagram.png",  
+            imgSrc: "https://danzoluvskfc.github.io/Commercial-Lambo/Images/instagram.png",  
             altText: "Instagram"
         },
         { 

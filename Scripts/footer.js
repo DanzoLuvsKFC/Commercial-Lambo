@@ -30,17 +30,17 @@ window.onload = () => {
     const socialMedias = [
         { 
             link: "https://www.facebook.com/Lamborghini", 
-            imgSrc: "/Images/facebook (1).png",  
+            imgSrc: "./Images/facebook (1).png",  
             altText: "Facebook"
         },
         { 
             link: "https://www.instagram.com/lamborghini?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", 
-            imgSrc: "/Images/instagram.png",  
+            imgSrc: "./Images/instagram.png",  
             altText: "Instagram"
         },
         { 
             link: "https://www.tiktok.com/@lamborghini?is_from_webapp=1&sender_device=pc", 
-            imgSrc: "/Images/tiktok.png",  
+            imgSrc: "./Images/tiktok.png",  
             altText: "Tiktok"
         }
         

@@ -405,6 +405,7 @@ a {
 }
 
 .ExploreLink {
+    position: relative;
     display: inline-block;
     font-size: 20px;
     margin-top: 45px;
@@ -416,9 +417,23 @@ a {
     font-family: "Satoshi";
 }
 
+.ExploreLink::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Adjust to position the line directly below the text */
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #FAFAFA; /* Line color */
+    transition: width 0.3s ease;
+}
+
 .ExploreLink:hover {
-    /* background-color: #FAFAFA; */
     color: #FAFAFA;
+}
+
+.ExploreLink:hover::after {
+    width: 100px;
 }
 
 /* ------------------------------RESPONSIVE STUFF---------------------------------------- */

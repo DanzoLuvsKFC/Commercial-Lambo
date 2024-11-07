@@ -1,37 +1,37 @@
 /* ------------------------------GENERAL TINGS---------------------------------------- */
 
 @font-face {
-    font-family: 'Satoshi'; 
-    src: url('../Fonts/Satoshi-Black.otf') format('truetype'); 
-  }
+    font-family: 'Satoshi';
+    src: url('../Fonts/Satoshi-Black.otf') format('truetype');
+}
 
-  @font-face {
-    font-family: 'Satoshi2'; 
-    src: url('../Fonts/Satoshi-Medium.otf') format('truetype'); 
-  }
+@font-face {
+    font-family: 'Satoshi2';
+    src: url('../Fonts/Satoshi-Medium.otf') format('truetype');
+}
 
-  @font-face {
-    font-family: 'Pangchan'; 
-    src: url('../Fonts/Pangchan.otf') format('truetype'); 
-  }
+@font-face {
+    font-family: 'Pangchan';
+    src: url('../Fonts/Pangchan.otf') format('truetype');
+}
 
-  @font-face {
-    font-family: 'Gambarino'; 
-    src: url('../Fonts/Gambarino-Regular.otf') format('truetype'); 
-  }
+@font-face {
+    font-family: 'Gambarino';
+    src: url('../Fonts/Gambarino-Regular.otf') format('truetype');
+}
 
 /* ------------------------------RESPONSIVE STUFF---------------------------------------- */
 
-@media (max-width: 901px) { 
+@media (max-width: 901px) {
 
-/* ------------------------------RESPONSIVE NAV STUFF---------------------------------------- */
+    /* ------------------------------RESPONSIVE NAV STUFF---------------------------------------- */
 
     nav {
         flex-wrap: wrap;
     }
 
     .nav-link {
-        padding: 5rem; 
+        padding: 5rem;
     }
 
     li {
@@ -39,48 +39,50 @@
     }
 
 
-/* ------------------------------RESPONSIVE SECTIONS STUFF---------------------------------------- */
+    /* ------------------------------RESPONSIVE SECTIONS STUFF---------------------------------------- */
 
-.SecondarySection{
-    text-align: center;
-}
+    .SecondarySection {
+        text-align: center;
+    }
 
 }
 
 @media (max-width: 938px) {
+
+
     .ContentDisplay {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
-    
+
     .ContentText {
-        width: 100%; 
+        width: 100%;
         margin-right: 0;
         left: 0;
-        text-align: center; 
+        text-align: center;
     }
-    
+
     .ContentImage {
-        width: 100%; 
-        height: auto; 
-        margin-top: 20px; 
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
     }
-    
+
 }
 
 @media (max-width: 375px) {
 
     .ContentDisplay {
         width: 100%;
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
-    
+
     .ContentDisplay .ContentText {
         width: 100%;
     }
 
-    .ContentImage{
+    .ContentImage {
         width: 100%;
     }
 
@@ -88,7 +90,7 @@
 
 /* ------------------------------NAV STUFF---------------------------------------- */
 
-head{
+head {
     display: none;
 }
 
@@ -103,7 +105,7 @@ header {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-body{
+body {
     margin: 0;
 }
 
@@ -137,17 +139,17 @@ nav {
     align-content: space-evenly;
     margin: 0;
     padding: 0;
-    
+
 }
 
-.scrolled{
-    background-color: #FAFAFA; 
+.scrolled {
+    background-color: #FAFAFA;
     color: #FAFAFA;
     transition: background-color 0.3s ease;
 }
 
 .scrolled .nav-link {
-    color: #181818; 
+    color: #181818;
 }
 
 /* ------------------------------FOOTER STUFF---------------------------------------- */
@@ -158,19 +160,19 @@ nav {
 }
 
 .custom-footer .contact-info-1 {
-    font-family: "Satoshi"; 
+    font-family: "Satoshi";
     font-weight: 500;
     margin: 20px;
 }
 
 .custom-footer .contact-info-2 {
-    font-family: "Satoshi2"; 
+    font-family: "Satoshi2";
     font-weight: 400;
     margin: 20px;
 }
 
 .custom-footer .contact-info-3 {
-    font-family: "Satoshi2"; 
+    font-family: "Satoshi2";
     font-weight: 300;
     margin: 20px;
 }
@@ -185,34 +187,34 @@ video {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    
+
 }
 
 /* ------------------------------FIRST SECTION---------------------------------------- */
 
 .MainSection {
     position: relative;
-    height: 100vh; 
-    overflow: hidden; 
+    height: 100vh;
+    overflow: hidden;
     text-align: center;
 }
 
 .MainGraphic video {
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
     width: 100vw;
     height: 100vh;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .MainText {
-    position: absolute; 
-    top: 75%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: #FAFAFA; 
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FAFAFA;
     z-index: 1;
 }
 
@@ -233,21 +235,21 @@ video {
 
 }
 
-.SecondaryText{
-    position: absolute; 
-    top: 64%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: #FAFAFA; 
+.SecondaryText {
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FAFAFA;
     z-index: 1;
 }
 
 .ExploreButton {
-    position: absolute; 
-    top: 90%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: #FAFAFA; 
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FAFAFA;
     z-index: 1;
 }
 
@@ -277,47 +279,47 @@ a {
 
 .SecondarySection {
 
-    background-color: #FAFAFA; 
-    padding: 10px; 
-    display: flex;                    
-    align-items: center;         
-    justify-content: center;   
-    flex-wrap: wrap; 
-                
+    background-color: #FAFAFA;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
 }
 
 .Portrait img {
     margin-top: 20px;
     margin-bottom: 30PX;
-    max-width: 100%; 
-    height: auto; 
-    display: block; 
-    
+    max-width: 100%;
+    height: auto;
+    display: block;
+
 }
 
-.ColdQuote{
+.ColdQuote {
     margin-bottom: 150px;
     color: #181818;
     margin: 30px;
 
 }
 
-.Quote{
+.Quote {
     margin: 0;
     font-family: 'Satoshi';
     font-size: 50px;
     font-weight: bold;
-    
+
 }
 
-.Quote1{
+.Quote1 {
     margin: 0;
     font-family: 'Satoshi';
     font-size: 50px;
     font-weight: bold;
 }
 
-.Quote2{
+.Quote2 {
     margin: 0;
     margin-bottom: 50px;
     font-family: 'Satoshi';
@@ -326,14 +328,14 @@ a {
 
 }
 
-.CeoName{
+.CeoName {
     margin-top: 40px;
     font-family: "Gambarino";
     font-size: 40px;
     margin-bottom: 0;
 }
 
-.TitleFlex{
+.TitleFlex {
     margin: 0;
     font-family: "Satoshi2";
     font-size: 25px;
@@ -343,12 +345,12 @@ a {
 /* ------------------------------THIRD SECTION---------------------------------------- */
 
 .ThirdSection {
-    background-color: #FAFAFA; 
-    padding: 30px; 
-    display: flex;                    
-    align-items: center;         
-    justify-content: center;   
-    flex-wrap: wrap; 
+    background-color: #FAFAFA;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
 }
 
@@ -373,19 +375,19 @@ a {
     align-items: center;
 }
 
-.ContentText{
-    width: 400px; 
+.ContentText {
+    width: 400px;
     min-height: 400px;
     position: relative;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .ContentImage {
     width: 388px;
-    height: 571px; 
-    overflow: hidden; 
+    height: 571px;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -394,13 +396,13 @@ a {
 .ContentImage img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .ExploreLink {
     display: inline-block;
     margin-top: 10px;
-    padding: 8px ;
+    padding: 8px;
     background-color: transparent;
     color: #181818;
     text-decoration: none;
@@ -414,3 +416,78 @@ a {
     color: #FAFAFA;
 }
 
+/* ------------------------------RESPONSIVE STUFF---------------------------------------- */
+
+@media (max-width: 901px) {
+
+    /* ------------------------------RESPONSIVE NAV STUFF---------------------------------------- */
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .nav-link {
+        padding: 5rem;
+    }
+
+    li {
+        padding-top: 1rem;
+    }
+
+    /* ------------------------------RESPONSIVE SECTIONS STUFF---------------------------------------- */
+
+    .SecondarySection {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 938px) {
+
+    .MainTitle {
+        font-size: 74px;
+    }
+
+    .MainTitleDesc{
+        font-size: 20px;
+    }
+
+
+    .ContentDisplay {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ContentText {
+        width: 100%;
+        margin-right: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    .ContentImage {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+
+    .ContentDisplay {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ContentDisplay .ContentText {
+        width: 100%;
+    }
+
+    .ContentImage {
+        width: 100%;
+    }
+
+}

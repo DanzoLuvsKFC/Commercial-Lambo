@@ -30,7 +30,7 @@ window.onload = () => {
     const socialMedias = [
         { 
             link: "https://www.facebook.com/Lamborghini", 
-            imgSrc: `${window.location.origin}/Images/facebook (1).png`,  
+            imgSrc: `${window.location.origin}./Images/facebook (1).png`,  
             altText: "Facebook"
         },
         { 

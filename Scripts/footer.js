@@ -40,7 +40,7 @@ window.onload = () => {
         },
         { 
             link: "https://www.tiktok.com/@lamborghini?is_from_webapp=1&sender_device=pc", 
-            imgSrc: "/Commercial-Lambo/Images/tiktok.png",  
+            imgSrc: "/Commercial-Lambo/Images/tik.png",  
             altText: "Tiktok"
         }
         

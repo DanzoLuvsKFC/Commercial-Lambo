@@ -42,3 +42,42 @@ document.addEventListener("DOMContentLoaded", () => {
     // Change content every 8 seconds
     setInterval(updateContent, 8000);
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Ensure JavaScript is setting the style directly
+    const contentText = document.querySelector(".ContentText");
+
+    // Force width to update for mobile sizes
+    function adjustContentTextWidth() {
+        if (window.innerWidth <= 400) {
+            contentText.style.width = "100%";
+            contentText.style.marginRight = "0";
+        } else {
+            contentText.style.width = ""; // Reset to CSS control on larger screens
+        }
+    }
+
+    // Run on load and on resize to keep adjusting
+    adjustContentTextWidth();
+    window.addEventListener("resize", adjustContentTextWidth);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Ensure JavaScript is setting the style directly
+    const contentText = document.querySelector(".ContentImage");
+
+    // Force width to update for mobile sizes
+    function adjustContentTextWidth() {
+        if (window.innerWidth <= 400) {
+            contentText.style.width = "100%";
+            contentText.style.marginRight = "0";
+        } else {
+            contentText.style.width = ""; // Reset to CSS control on larger screens
+        }
+    }
+
+    // Run on load and on resize to keep adjusting
+    adjustContentTextWidth();
+    window.addEventListener("resize", adjustContentTextWidth);
+});
+

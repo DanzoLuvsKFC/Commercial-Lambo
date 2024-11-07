@@ -118,6 +118,8 @@ nav {
     padding: 20px;
     background-color: transparent;
     z-index: 10;
+    transition: background-color 0.4s ease, color 0.4s ease;
+    
 }
 
 .nav-link {
@@ -142,14 +144,28 @@ nav {
 
 }
 
-.scrolled {
-    background-color: #FAFAFA;
-    color: #FAFAFA;
-    transition: background-color 0.3s ease;
+nav.scrolled-second, nav.scrolled-third {
+    z-index: 1000; /* Adjust to ensure it stays on top */
+    position: relative; /* Necessary for z-index to work */
 }
 
-.scrolled .nav-link {
+.scrolled-second {
+    background-color: #FAFAFA;
+    color: #FAFAFA;
+    /* transition: background-color 0.3s ease; */
+}
+
+.scrolled-second .nav-link {
     color: #181818;
+}
+
+.scrolled-third {
+    background-color: #a00c1c; /* Example color for the third section */
+    color: #FFD700;
+}
+
+.scrolled-third .nav-link {
+    color: #FAFAFA;
 }
 
 /* ------------------------------FOOTER STUFF---------------------------------------- */
@@ -345,6 +361,7 @@ a {
 /* ------------------------------THIRD SECTION---------------------------------------- */
 
 .ThirdSection {
+
     background-color: #a00c1c;
     padding: 30px;
     display: flex;
@@ -433,7 +450,7 @@ a {
 }
 
 .ExploreLink:hover::after {
-    width: 100px;
+    width: 90px;
 }
 
 /* ------------------------------RESPONSIVE STUFF---------------------------------------- */

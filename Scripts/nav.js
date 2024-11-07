@@ -52,21 +52,28 @@ document.addEventListener('DOMContentLoaded', createMenuItems);
 
 document.addEventListener('DOMContentLoaded', createMenuItems);
 
-// New function to change navbar background on scroll
 const updateNavbarOnScroll = () => {
     const nav = document.querySelector('nav');
     const secondSection = document.querySelector('.SecondarySection');
-    const secondSectionTop = secondSection.offsetTop;
+    const thirdSection = document.querySelector('.ThirdSection');
 
-    if (window.scrollY >= secondSectionTop) {
-        nav.classList.add('scrolled');
-    } else {
-        nav.classList.remove('scrolled');
+    const secondSectionTop = secondSection.offsetTop;
+    const thirdSectionTop = thirdSection.offsetTop;
+
+    // Remove both classes before applying new one
+    nav.classList.remove('scrolled-second', 'scrolled-third');
+
+    if (window.scrollY >= secondSectionTop - 1 && window.scrollY < thirdSectionTop - 1) {
+        nav.classList.add('scrolled-second');
+    } else if (window.scrollY >= thirdSectionTop - 1) {
+        nav.classList.add('scrolled-third');
     }
 };
 
-
 window.addEventListener('scroll', updateNavbarOnScroll);
+
+
+
 
 
 

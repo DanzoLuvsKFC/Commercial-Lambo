@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Data Visualizations</title>
 
-    <meta name="description" content="Explore interactive data visualizations with bar graphs and circle displays using D3.js, designed for dynamic data representation and user engagement.">
-    <meta name="keywords" content="data visualization, bar graph, circle show, interactive design, D3.js, web development, user engagement">
+    <meta name="description"
+        content="Explore interactive data visualizations with bar graphs and circle displays using D3.js, designed for dynamic data representation and user engagement.">
+    <meta name="keywords"
+        content="data visualization, bar graph, circle show, interactive design, D3.js, web development, user engagement">
     <meta name="author" content="Interactive Data Visualization Developer">
 
     <script src="https://d3js.org/d3.v7.min.js"></script>
@@ -15,6 +17,7 @@
     <script src="/Scripts/nav.js" defer></script>
     <script src="/Scripts/footer.js" defer></script>
     <script src="/Scripts/footer.js" defer></script>
+    <script src="/Scripts/booking.js" defer></script>
 </head>
 
 <body>
@@ -27,7 +30,7 @@
         <section class="MainSection">
 
             <div class="MainGraphic">
-                <video src="/Videos/WireGraphic.mp4" autoplay loop muted></video>
+                <video src="../Videos/WireGraphic.mp4" autoplay loop muted></video>
             </div>
 
             <div class="SecondaryText">
@@ -43,36 +46,45 @@
 
         <section class="SecondarySection">
 
-            <h2 class="Quote3">Book a session</h2>
-        
+            <div class="ColdQuote"><h2 class="Quote3">Book a session</h2>
+
             <form id="bookingForm">
-            <div>
-                <label for="Name">Name</label>
-                <input type="text" name="Name" placeholder="Name" class="inputField">
-            </div>
-            <div>
-                <label for="Email">Email</label>
-                <input type="text" name="Email" placeholder="Email" class="inputField">
-            </div>
-            <div>
-                <label for="phoneNumber">Phone number</label>
-                <input type="text" name="phoneNumber" placeholder="Phone Number" class="inputField">
-            </div>
-            <div>
-                <label for="date">Choose a date</label>
-                <input type="date" name="date" id="dateInput" class="inputField">
-            </div>
-            <button type="submit" id="confirmButton" class="Buttons"><span>Confirm booking</span></button>
-        </form>
 
-        <div id="warningText">
-            <h2>Please note</h2>
-            By scheduling a test drive, you agree to assume full responsibility for the vehicle during the drive. Any
-            damages, violations, or incidents resulting from improper use or negligence will be at your expense. Please
-            drive responsibly and adhere to all traffic laws.
+                <div>
+                    <label for="Name">Name</label>
+                    <input type="text" name="Name" placeholder="Name" class="inputField">
+                </div>
+
+                <div>
+                    <label for="Email">Email</label>
+                    <input type="text" name="Email" placeholder="Email" class="inputField">
+                </div>
+
+                <div>
+                    <label for="phoneNumber">Phone number</label>
+                    <input type="text" name="phoneNumber" placeholder="Phone Number" class="inputField">
+                </div>
+
+                <div>
+                    <label for="date">Choose a date</label>
+                    <input type="date" name="date" id="dateInput" class="inputField">
+                </div>
+
+                <button type="submit" id="confirmButton" class="Buttons"><span>Confirm booking</span></button>
+                
+            </form>
+
+            <div id="warningText">
+                <h2 class="Quote13">PLEASE NOTE</h2>
+                <p class="TitleFlex">By scheduling a test drive, you agree to assume full responsibility for the vehicle during the drive.
+                Any
+                damages, violations, or incidents resulting from improper use or negligence will be at your expense.
+                Please
+                drive responsibly and adhere to all traffic laws.</p>
+            </div>
+
+            <div class="message" id="message"></div>
         </div>
-
-        <div class="message" id="message"></div>
 
         </section>
 
@@ -87,4 +99,3 @@
 </body>
 
 </html>
-

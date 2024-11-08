@@ -6,7 +6,7 @@ const fetchCarData = async () => {
         console.log(data);
         const carData = data.modelos;
 
-        const svg = d3.select("svg");
+        const svg = d3.select(".Items");
         const margin = { top: 20, right: 30, bottom: 50, left: 150 };
         const width = svg.attr("width") - margin.left - margin.right;
         const height = svg.attr("height") - margin.top - margin.bottom;
@@ -14,9 +14,11 @@ const fetchCarData = async () => {
         const g = svg.append("g")
             .attr("transform", `translate(100, 50)`);
 
+        // Define scales
         const x = d3.scaleLinear()
             .range([0, width])
-            .domain([0, d3.max(carData, d => d.codigo)]);
+            .domain([0, d3.max(carData, d => d.codigo)])  // Ensure x scale uses the max 'codigo' value
+            .clamp(true);  // This ensures the scale doesn't go below 0
 
         const y = d3.scaleBand()
             .range([0, height])
@@ -51,7 +53,7 @@ const fetchCarData = async () => {
             .attr("class", "bar")
             .attr("x", 0)
             .attr("y", d => y(d.nome))
-            .attr("width", d => x(d.codigo))
+            .attr("width", d => Math.max(0, x(d.codigo)))  // Ensure width is not negative
             .attr("height", y.bandwidth())
             .on("mouseover", (event, d) => {
                 tooltip.style("display", "block")
@@ -78,7 +80,7 @@ const fetchCarData = async () => {
             .attr("font-weight", "bold")
             .text("Price Range");
 
-        // Placeholder for images next to bars
+        // Placeholder for images next to bars (optional)
         /*g.selectAll(".car-image")
             .data(carData)
             .enter().append("image")
@@ -87,7 +89,7 @@ const fetchCarData = async () => {
             .attr("y", d => y(d.nome) + (y.bandwidth() / 2) - 20)
             .attr("class", "car-image");*/
 
-        // Add car names to the bars
+        // Add car names to the bars (optional)
         /*g.selectAll(".label")
             .data(carData)
             .enter().append("text")
@@ -102,6 +104,3 @@ const fetchCarData = async () => {
 };
 
 fetchCarData();
-
-
-

@@ -1,5 +1,5 @@
 // Fetch car data and create a chart
-const fetchCarData = async () => {
+const fetchCarDataa = async () => {
     try {
         const response = await fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas/171/modelos');
         const data = await response.json();
@@ -31,7 +31,7 @@ const fetchCarData = async () => {
     }
 };
 
-fetchCarData();
+fetchCarDataa();
 
 // Function to create the chart
 const createChart = (data) => {

@@ -5,7 +5,7 @@ const navMenuItems = [
     { name: "DESIGN", href: "/Commercial-Lambo/Design/design&research.html" },
     { name: "THEORY", href: "/Commercial-Lambo/Theory/theory.html" },
     { name: "ABOUT", href: "/Commercial-Lambo/About/about.html" },
-    { name: "CONTACT US", href: "/Commercial-Lambo/Contact/contact.html" }
+    { name: "CONTACT", href: "/Commercial-Lambo/Contact/contact.html" }
 ];
 
 // Function to create menu items

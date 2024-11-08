@@ -60,7 +60,7 @@ const fetchCarData = async () => {
                 d3.select(event.currentTarget)
                     .transition()
                     .duration(300)
-                    .attr("fill", "orange");
+                    .attr("fill", "#fbcd5d");
                 tooltip.style("display", "block")
                     .html(`<strong>Model:</strong> ${d.nome}<br><strong>Code:</strong> ${d.codigo}`)
                     .style("left", `${event.pageX + 10}px`)

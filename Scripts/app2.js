@@ -6,7 +6,7 @@ const fetchCarDataa = async () => {
         const numCircles = data.modelos.length;
 
         // Adjust the radius dynamically based on the number of circles
-        const baseRadius = 160;
+        const baseRadius = 180;
         const spacingFactor = 1.5;
         const adjustedRadius = (baseRadius + (numCircles * 2)) * spacingFactor;
 

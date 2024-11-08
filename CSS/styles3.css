@@ -303,17 +303,6 @@ a {
 
 }
 
-.price-display {
-    position: absolute;
-    padding: 10px;
-    background-color: lightgray;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    border: 1px solid #ccc;
-    pointer-events: none;  /* To prevent interfering with other interactions */
-}
 
 .Portrait img {
     margin-top: 20px;
@@ -322,6 +311,14 @@ a {
     height: auto;
     display: block;
 
+}
+
+#filterButton{
+    background-color: #fbcd5d;
+    font-family: "Satoshi";
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .Portrait2 img {

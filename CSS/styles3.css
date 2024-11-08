@@ -159,12 +159,12 @@ nav.scrolled-second, nav.scrolled-third {
 }
 
 .scrolled-third {
-    background-color: #181818; 
+    background-color: #FAFAFA; 
     
 }
 
 .scrolled-third .nav-link {
-    color: #FAFAFA;
+    color: #181818;
 }
 
 /* ------------------------------FOOTER STUFF---------------------------------------- */
@@ -293,7 +293,6 @@ a {
 /* ------------------------------SECONDARY SECTION---------------------------------------- */
 
 .SecondarySection {
-
     
     background-color: #FAFAFA;
     padding: 70px;
@@ -355,17 +354,29 @@ a {
 }
 
 .TitleFlex {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     font-family: "Satoshi2";
     font-size: 25px;
     opacity: 60%;
 }
 
+/* ------------------------------THIRD SECTION---------------------------------------- */
+
+.ThirdSection {
+
+    background-color: #FAFAFA;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
 .ColdQuote3 {
     margin-bottom: 150px;
-    padding-top: 75px;
-    color: #FAFAFA;
+    color: #181818;
     margin: 30px;
     justify-content: center;
     text-align: center;
@@ -383,7 +394,7 @@ a {
 .Quote13 {
     margin: 0;
     font-family: 'Satoshi';
-    font-size: 50px;
+    font-size: 35px;
     font-weight: bold;
     text-align: center;
 }
@@ -404,111 +415,25 @@ a {
     margin-bottom: 0;
 }
 
+p {
+    font-weight: bold;
+}
+
 .TitleFlex3 {
     
     margin-top: 50px;
     margin-bottom: 50px;
-    font-family: "Satoshi2";
+    font-family: "Satoshi";
     font-size: 25px;
     opacity: 70%;
 }
 
-/* ------------------------------THIRD SECTION---------------------------------------- */
-
-.ThirdSection {
-
-    background-color: #181818;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
+.EssayIMG {
+    width: 100%;      
+    max-width: 1500px;  
+    height: auto;
 }
 
-.ContentDisplay {
-    display: flex;
-    margin: 65px;
-    align-items: center;
-    justify-content: center;
-}
-
-.ContentTitle {
-    width: 700px;
-    font-family: 'Satoshi';
-    font-size: 50px;
-    font-weight: bold;
-    color: #FAFAFA;
-    text-align: center;
-}
-
-.ContentDescription {
-    width: 400PX;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    font-family: "Satoshi2";
-    font-size: 25px;
-    color: #FAFAFA;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.ContentText {
-    width: 400px;
-    min-height: 400px;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.ContentImage {
-    width: 388px;
-    height: 571px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.ContentImage img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.ExploreLink {
-    position: relative;
-    display: inline-block;
-    font-size: 20px;
-    margin-top: 45px;
-    background-color: transparent;
-    color: #FAFAFA;
-    text-decoration: none;
-    border-radius: 10px;
-    transition: color 0.5s ease, background-color 0.5s ease;
-    font-family: "Satoshi";
-}
-
-.ExploreLink::after {
-    content: '';
-    position: absolute;
-    bottom: -10px; /* Adjust to position the line directly below the text */
-    left: 0;
-    width: 0;
-    height: 3px;
-    background-color: #FAFAFA; /* Line color */
-    transition: width 0.3s ease;
-}
-
-.ExploreLink:hover {
-    color: #FAFAFA;
-}
-
-.ExploreLink:hover::after {
-    width: 90px;
-}
 
 /* ------------------------------RESPONSIVE STUFF---------------------------------------- */
 

@@ -1,0 +1,559 @@
+/* ------------------------------GENERAL TINGS---------------------------------------- */
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../Fonts/Satoshi-Black.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Satoshi2';
+    src: url('../Fonts/Satoshi-Medium.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pangchan';
+    src: url('../Fonts/Pangchan.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gambarino';
+    src: url('../Fonts/Gambarino-Regular.otf') format('truetype');
+}
+
+/* ------------------------------RESPONSIVE STUFF---------------------------------------- */
+
+@media (max-width: 901px) {
+
+    /* ------------------------------RESPONSIVE NAV STUFF---------------------------------------- */
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .nav-link {
+        padding: 5rem;
+    }
+
+    li {
+        padding-top: 1rem;
+    }
+
+
+    /* ------------------------------RESPONSIVE SECTIONS STUFF---------------------------------------- */
+
+    .SecondarySection {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 938px) {
+
+
+    .ContentDisplay {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ContentText {
+        width: 100%;
+        margin-right: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    .ContentImage {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .ContentDisplay {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ContentDisplay .ContentText {
+        width: 100%;
+    }
+
+    .ContentImage {
+        width: 100%;
+    }
+
+}
+
+/* ------------------------------NAV STUFF---------------------------------------- */
+
+head {
+    display: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+    background-color: transparent;
+    z-index: 10;
+    transition: background-color 0.4s ease, color 0.4s ease;
+    
+}
+
+.nav-link {
+    color: #FAFAFA;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Pangchan';
+    padding: 1.5rem;
+    margin: 15px;
+    font-weight: bold;
+}
+
+#nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav.scrolled-second, nav.scrolled-third {
+    z-index: 1000; 
+    position: relative; 
+}
+
+.scrolled-second {
+    background-color: #FAFAFA;
+    color: #FAFAFA;
+}
+
+.scrolled-second .nav-link {
+    color: #181818;
+}
+
+.scrolled-third {
+    background-color: #a00c1c; 
+    
+}
+
+.scrolled-third .nav-link {
+    color: #FAFAFA;
+}
+
+/* ------------------------------FOOTER STUFF---------------------------------------- */
+
+.custom-footer {
+    background-color: transparent;
+    color: #181818;
+}
+
+.custom-footer .contact-info-1 {
+    font-family: "Satoshi";
+    font-weight: 500;
+    margin: 20px;
+}
+
+.custom-footer .contact-info-2 {
+    font-family: "Satoshi2";
+    font-weight: 400;
+    margin: 20px;
+}
+
+.custom-footer .contact-info-3 {
+    font-family: "Satoshi2";
+    font-weight: 300;
+    margin: 20px;
+}
+
+/* ------------------------------PAGE STUFF---------------------------------------- */
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+
+}
+
+/* ------------------------------FIRST SECTION---------------------------------------- */
+
+.MainSection {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+.MainGraphic video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.MainText {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FAFAFA;
+    z-index: 1;
+}
+
+.MainTitle {
+    justify-content: center;
+    color: #FAFAFA;
+    font-weight: bold;
+    font-family: "Satoshi2";
+    font-size: 95px;
+}
+
+.MainTitleDesc {
+    justify-content: center;
+    color: #FAFAFA;
+    font-family: "Pangchan";
+    font-weight: bold;
+    font-size: 24px;
+
+}
+
+.SecondaryText {
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FAFAFA;
+    z-index: 1;
+}
+
+.ExploreButton {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FAFAFA;
+    z-index: 1;
+}
+
+.ExploreText {
+    background-color: rgb(204, 5, 5);
+    justify-content: center;
+    color: #FAFAFA;
+    font-family: "Pangchan";
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.ExploreText:hover {
+    color: rgb(204, 5, 5);
+    background-color: transparent;
+    border-color: rgb(204, 5, 5);
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------------------SECONDARY SECTION---------------------------------------- */
+
+.SecondarySection {
+
+    
+    background-color: #FAFAFA;
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.Portrait img {
+    margin-top: 20px;
+    margin-bottom: 30PX;
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+.ColdQuote {
+    margin-bottom: 150px;
+    color: #181818;
+    margin: 30px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.Quote {
+    margin: 0;
+    font-family: 'Satoshi';
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.Quote1 {
+    margin: 0;
+    font-family: 'Satoshi';
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Quote2 {
+    margin: 0;
+    margin-bottom: 50px;
+    font-family: 'Satoshi';
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.CeoName {
+    margin-top: 40px;
+    font-family: "Gambarino";
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.TitleFlex {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: "Satoshi2";
+    font-size: 25px;
+    opacity: 60%;
+}
+
+/* ------------------------------THIRD SECTION---------------------------------------- */
+
+.ThirdSection {
+
+    background-color: #a00c1c;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.ContentDisplay {
+    display: flex;
+    margin: 65px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContentTitle {
+    margin-top: 10px;
+    margin-bottom: 35px;
+    font-family: 'Satoshi';
+    font-size: 50px;
+    font-weight: bold;
+    color: #FAFAFA;
+}
+
+.ContentDescription {
+    width: 350PX;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-family: "Satoshi2";
+    font-size: 25px;
+    color: #FAFAFA;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContentText {
+    width: 400px;
+    min-height: 400px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ContentImage {
+    width: 388px;
+    height: 571px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContentImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ExploreLink {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 45px;
+    background-color: transparent;
+    color: #FAFAFA;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: color 0.5s ease, background-color 0.5s ease;
+    font-family: "Satoshi";
+}
+
+.ExploreLink::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Adjust to position the line directly below the text */
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #FAFAFA; /* Line color */
+    transition: width 0.3s ease;
+}
+
+.ExploreLink:hover {
+    color: #FAFAFA;
+}
+
+.ExploreLink:hover::after {
+    width: 90px;
+}
+
+/* ------------------------------RESPONSIVE STUFF---------------------------------------- */
+
+@media (max-width: 901px) {
+
+    /* ------------------------------RESPONSIVE NAV STUFF---------------------------------------- */
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .nav-link {
+        padding: 0;
+    }
+
+    li {
+        padding-top: 1rem;
+    }
+
+    
+
+    /* ------------------------------RESPONSIVE SECTIONS STUFF---------------------------------------- */
+
+    .SecondarySection {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 938px) {
+
+    .MainTitle {
+        font-size: 74px;
+    }
+
+    .MainTitleDesc {
+        font-size: 20px;
+    }
+
+    .Quote{
+        font-size: 35px;
+    }
+
+    .Quote1{
+        font-size: 35px;
+    }
+
+    .ContentDisplay {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
+    .ContentText {
+        width: 100%;
+        margin-right: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    .ContentImage {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+
+    .ContentDisplay {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ColdQuote{
+        width: 100%;
+        padding: 0;
+    }
+
+    .Quote{
+        font-size: 35px;
+    }
+
+    .Quote1{
+        font-size: 35px;
+    }
+
+    .ContentDisplay .ContentText {
+        width: 100%;
+    }
+
+    .ContentImage {
+        width: 100%;
+    }
+
+}

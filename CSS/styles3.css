@@ -159,7 +159,7 @@ nav.scrolled-second, nav.scrolled-third {
 }
 
 .scrolled-third {
-    background-color: #a00c1c; 
+    background-color: #181818; 
     
 }
 
@@ -366,7 +366,7 @@ a {
 
 .ThirdSection {
 
-    background-color: #a00c1c;
+    background-color: #181818;
     padding: 30px;
     display: flex;
     align-items: center;
@@ -383,16 +383,16 @@ a {
 }
 
 .ContentTitle {
-    margin-top: 10px;
-    margin-bottom: 35px;
+    width: 700px;
     font-family: 'Satoshi';
     font-size: 50px;
     font-weight: bold;
     color: #FAFAFA;
+    text-align: center;
 }
 
 .ContentDescription {
-    width: 350PX;
+    width: 400PX;
     margin-top: 10px;
     margin-bottom: 0px;
     font-family: "Satoshi2";
@@ -400,6 +400,7 @@ a {
     color: #FAFAFA;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .ContentText {
@@ -509,7 +510,10 @@ a {
         align-items: center;
     }
 
-    
+    .ContentDescription{
+        text-align: center;
+        justify-content: center;
+    }
 
     .ContentText {
         width: 100%;

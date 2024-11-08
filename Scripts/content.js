@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (window.innerWidth <= 936) {
             contentText.style.width = "100%";
             contentText.style.marginRight = "0";
-            contentText.style.fontSize = "18px"
+            contentText.style.fontSize = "24px"
         } else {
             contentText.style.width = ""; 
         }

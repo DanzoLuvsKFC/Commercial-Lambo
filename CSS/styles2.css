@@ -497,10 +497,15 @@ a {
     }
 
     .ContentText {
+        min-height: 300%;
         width: 100%;
         margin-right: 0;
         left: 0;
         text-align: center;
+    }
+
+    .ContentDescription{
+        font-size: 45px;
     }
 
     .ContentImage {

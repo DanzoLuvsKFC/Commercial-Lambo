@@ -33,6 +33,14 @@
     transform: translateY(0);
 }
 
+.ContentText, .ContentImage img, .ContentDescription, .ExploreLink {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+.fade-out {
+    opacity: 0;
+}
+
 /* ------------------------------RESPONSIVE STUFF---------------------------------------- */
 
 @media (max-width: 901px) {

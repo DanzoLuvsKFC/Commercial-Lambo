@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const contentData = [
         {
             title: "Explore Car Models",
-            img: "Images/Greenie.jpeg" ,
+            img: "Images/Greenie.jpeg",
             description: "View all the different types of available car models presented through eye-catching visuals.",
             link: "Information/data.html"
         },
@@ -27,77 +27,44 @@ document.addEventListener("DOMContentLoaded", () => {
     const descElement = document.querySelector(".ContentDescription");
     const linkElement = document.querySelector(".ExploreLink");
 
-    function updateContent() {
-        const content = contentData[currentIndex];
-        titleElement.textContent = content.title;
-        imgElement.src = content.img;
-        descElement.textContent = content.description;
-        linkElement.href = content.link;
-
-        currentIndex = (currentIndex + 1) % contentData.length;
+    function fadeOut() {
+        // Add the fade-out class to elements to make them transparent
+        titleElement.classList.add("fade-out");
+        imgElement.classList.add("fade-out");
+        descElement.classList.add("fade-out");
+        linkElement.classList.add("fade-out");
     }
 
-   
+    function fadeIn() {
+        // Remove the fade-out class to fade elements back in
+        titleElement.classList.remove("fade-out");
+        imgElement.classList.remove("fade-out");
+        descElement.classList.remove("fade-out");
+        linkElement.classList.remove("fade-out");
+    }
+
+    function updateContent() {
+        // First, fade out the elements, then update them after the fade-out is complete
+        fadeOut();
+
+        setTimeout(() => {
+            const content = contentData[currentIndex];
+            titleElement.textContent = content.title;
+            imgElement.src = content.img;
+            descElement.textContent = content.description;
+            linkElement.href = content.link;
+
+            // Move to the next item in the array
+            currentIndex = (currentIndex + 1) % contentData.length;
+
+            // Fade in the new content
+            fadeIn();
+        }, 500); // Wait for 0.5s (500ms) for fade-out to complete
+    }
+
+    // Initialize the content and start the interval
     updateContent();
-    
     setInterval(updateContent, 8000);
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    
-    const contentText = document.querySelector(".ContentText");
-
-    
-    function adjustContentTextWidth() {
-        if (window.innerWidth <= 400) {
-            contentText.style.width = "100%";
-            contentText.style.marginRight = "0";
-        } else {
-            contentText.style.width = ""; 
-        }
-    }
-
-    
-    adjustContentTextWidth();
-    window.addEventListener("resize", adjustContentTextWidth);
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-    
-    const contentText = document.querySelector(".ContentImage");
-
-    
-    function adjustContentTextWidth() {
-        if (window.innerWidth <= 400) {
-            contentText.style.width = "100%";
-            contentText.style.marginRight = "0";
-        } else {
-            contentText.style.width = ""; 
-        }
-    }
-
-
-    adjustContentTextWidth();
-    window.addEventListener("resize", adjustContentTextWidth);
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-    
-    const contentText = document.querySelector(".ContentDescription");
-
-    
-    function adjustContentTextWidth() {
-        if (window.innerWidth <= 936) {
-            contentText.style.width = "100%";
-            contentText.style.marginRight = "0";
-            contentText.style.fontSize = "24px"
-        } else {
-            contentText.style.width = ""; 
-        }
-    }
-
-
-    adjustContentTextWidth();
-    window.addEventListener("resize", adjustContentTextWidth);
-});
 

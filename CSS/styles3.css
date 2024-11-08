@@ -390,17 +390,18 @@ a {
 }
 
 .IMGContainer {
+    padding: 30px;
     display: flex;
-    flex-wrap: wrap; /* Allows images to wrap to the next line if there's not enough space */
-    gap: 10px; /* Adjust spacing between images */
-    justify-content: center; /* Centers the images horizontally */
+    flex-wrap: wrap; 
+    gap: 10px; 
+    justify-content: center; 
 }
 
 .Content-Image {
-    width: 60%; /* Sets the images to be smaller; adjust this percentage as needed */
-    max-width: 600px; /* Ensures images don't get too large */
-    height: auto; /* Maintains image aspect ratio */
-    object-fit: contain; /* Ensures the image fits nicely within the defined space */
+    width: 60%; 
+    max-width: 600px; 
+    height: auto; 
+    object-fit: contain; 
 }
 
 /* ------------------------------THIRD SECTION---------------------------------------- */

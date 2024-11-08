@@ -17,8 +17,8 @@ const fetchCarData = async () => {
         // Define scales
         const x = d3.scaleLinear()
             .range([0, width])
-            .domain([0, d3.max(carData, d => d.codigo)])  // Ensure x scale uses the max 'codigo' value
-            .clamp(true);  // This ensures the scale doesn't go below 0
+            .domain([0, d3.max(carData, d => d.codigo)])  
+            .clamp(true);
 
         const y = d3.scaleBand()
             .range([0, height])
@@ -37,7 +37,7 @@ const fetchCarData = async () => {
         // Tooltip setup
         const tooltip = d3.select("body").append("div")
             .attr("class", "tooltip")
-            .style("position", "relative")
+            .style("position", "absolute")  // Changed from relative to absolute
             .style("background-color", "white")
             .style("border", "1px solid black")
             .style("padding", "8px")
@@ -46,30 +46,40 @@ const fetchCarData = async () => {
             .style("font-family", "Pangchan")
             .style("font-size", "12px");
 
-        // Add bars
+        // Add bars with gradual loading and color transition
         g.selectAll(".bar")
             .data(carData)
             .enter().append("rect")
             .attr("class", "bar")
             .attr("x", 0)
             .attr("y", d => y(d.nome))
-            .attr("width", d => Math.max(0, x(d.codigo)))  // Ensure width is not negative
+            .attr("width", 0)
             .attr("height", y.bandwidth())
+            .attr("fill", "#181818")
             .on("mouseover", (event, d) => {
+                d3.select(event.currentTarget)
+                    .transition()
+                    .duration(300)
+                    .attr("fill", "orange");
                 tooltip.style("display", "block")
                     .html(`<strong>Model:</strong> ${d.nome}<br><strong>Code:</strong> ${d.codigo}`)
                     .style("left", `${event.pageX + 10}px`)
                     .style("top", `${event.pageY - 20}px`);
-                d3.select(event.currentTarget).attr("fill", "orange");
             })
             .on("mousemove", (event) => {
                 tooltip.style("left", `${event.pageX + 10}px`)
                     .style("top", `${event.pageY - 20}px`);
             })
             .on("mouseout", (event) => {
+                d3.select(event.currentTarget)
+                    .transition()
+                    .duration(300)
+                    .attr("fill", "#181818");
                 tooltip.style("display", "none");
-                d3.select(event.currentTarget).attr("fill", "steelblue");
-            });
+            })
+            .transition()
+            .duration(1000)
+            .attr("width", d => x(d.codigo));
 
         // Add the "Price Range" label
         svg.append("text")
@@ -79,24 +89,6 @@ const fetchCarData = async () => {
             .attr("font-size", "16px")
             .attr("font-weight", "bold")
             .text("Price Range");
-
-        // Placeholder for images next to bars (optional)
-        /*g.selectAll(".car-image")
-            .data(carData)
-            .enter().append("image")
-            .attr("xlink:href", d => `../Images/${d.nome}.jpeg`)
-            .attr("x", -50)
-            .attr("y", d => y(d.nome) + (y.bandwidth() / 2) - 20)
-            .attr("class", "car-image");*/
-
-        // Add car names to the bars (optional)
-        /*g.selectAll(".label")
-            .data(carData)
-            .enter().append("text")
-            .attr("x", d => x(d.codigo) + 5)
-            .attr("y", d => y(d.nome) + y.bandwidth() / 2)
-            .attr("dy", ".35em")
-            .text(d => d.nome);*/
 
     } catch (error) {
         console.error("Error fetching car data:", error);

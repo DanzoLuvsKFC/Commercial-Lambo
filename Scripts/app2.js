@@ -6,8 +6,8 @@ const fetchCarDataa = async () => {
         const numCircles = data.modelos.length;
 
         // Adjust the radius dynamically based on the number of circles
-        const baseRadius = 250;
-        const spacingFactor = 1.2;
+        const baseRadius = 160;
+        const spacingFactor = 1.5;
         const adjustedRadius = (baseRadius + (numCircles * 2)) * spacingFactor;
 
         const centerX = 400;
@@ -63,8 +63,8 @@ const createChart = (data) => {
         .attr("y", d => d.y)
         .attr("dy", ".35em")
         .attr("text-anchor", "middle")
-        .attr("font-size", "5rem")
-        .attr("font-family", "Arial")
+        .attr("font-size", "0.85rem")
+        .attr("font-family", "Satoshi")
         .attr("fill", "black")
         .text(d => {
             const words = d.name.split(" ");

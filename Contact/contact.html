@@ -11,8 +11,9 @@
     <meta name="author" content="Interactive Data Visualization Developer">
 
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <link rel="stylesheet" href="/CSS/styles2.css">
+    <link rel="stylesheet" href="../CSS/styles3.css">
     <script src="/Scripts/nav.js" defer></script>
+    <script src="/Scripts/footer.js" defer></script>
     <script src="/Scripts/footer.js" defer></script>
 </head>
 
@@ -40,15 +41,43 @@
 
         </section>
 
+        <section class="SecondarySection">
+
+            <h2 class="Quote3">Book a session</h2>
+        
+            <form id="bookingForm">
+            <div>
+                <label for="Name">Name</label>
+                <input type="text" name="Name" placeholder="Name" class="inputField">
+            </div>
+            <div>
+                <label for="Email">Email</label>
+                <input type="text" name="Email" placeholder="Email" class="inputField">
+            </div>
+            <div>
+                <label for="phoneNumber">Phone number</label>
+                <input type="text" name="phoneNumber" placeholder="Phone Number" class="inputField">
+            </div>
+            <div>
+                <label for="date">Choose a date</label>
+                <input type="date" name="date" id="dateInput" class="inputField">
+            </div>
+            <button type="submit" id="confirmButton" class="Buttons"><span>Confirm booking</span></button>
+        </form>
+
+        <div id="warningText">
+            <h2>Please note</h2>
+            By scheduling a test drive, you agree to assume full responsibility for the vehicle during the drive. Any
+            damages, violations, or incidents resulting from improper use or negligence will be at your expense. Please
+            drive responsibly and adhere to all traffic laws.
+        </div>
+
+        <div class="message" id="message"></div>
+
+        </section>
+
         <section class="ThirdSection">
 
-            <div class="ContentDisplay">
-                <div class="ContentText">
-                    <h2 class="ContentTitle">Title for content piece 1</h2>
-                    <p class="ContentDescription">Description for content piece 1</p>
-                    <a href="link1.html" class="ExploreLink">Explore</a>
-                </div>
-            </div>
 
         </section>
 

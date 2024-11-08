@@ -312,12 +312,31 @@ a {
 
 }
 
+.Portrait2 img {
+    width: 400px;
+    height: 600px;
+    margin-top: 20px;
+    margin-bottom: 30PX;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+
+}
+
 .ColdQuote {
     margin-bottom: 150px;
     color: #181818;
     margin: 30px;
     justify-content: center;
     text-align: center;
+
+}
+
+.ColdQuoteA {
+    width: 600px;
+    margin-bottom: 150px;
+    color: #181818;
+    margin: 30px;
 
 }
 
@@ -335,6 +354,14 @@ a {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
+}
+
+.Quote11 {
+    margin: 0;
+    font-family: 'Satoshi';
+    font-size: 50px;
+    font-weight: bold;
+    
 }
 
 .Quote2 {
@@ -461,6 +488,23 @@ p {
         text-align: center;
     }
 
+    .ColdQuoteA {
+        width: 90%;
+        margin-bottom: 150px;
+        color: #181818;
+    
+        justify-content: center;
+        text-align: center;
+    
+    }
+    
+
+    .Quote11{
+        text-align: center;
+        width: 100%;
+        font-size: 35px;
+    }
+
 }
 
 @media (max-width: 938px) {
@@ -471,6 +515,23 @@ p {
 
     .MainTitleDesc {
         font-size: 20px;
+    }
+
+    .ColdQuoteA {
+        width: 90%;
+        margin-bottom: 150px;
+        color: #181818;
+
+        justify-content: center;
+        text-align: center;
+    
+    }
+    
+
+    .Quote11{
+        text-align: center;
+        width: 100%;
+        font-size: 35px;
     }
 
     .Quote{
@@ -518,6 +579,22 @@ p {
     .ColdQuote{
         width: 100%;
         padding: 0;
+    }
+
+    .ColdQuoteA {
+        width: 50%;
+        margin-bottom: 150px;
+        color: #181818;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    
+
+    .Quote11{
+        text-align: center;
+        width: 100%;
+        font-size: 35px;
     }
 
     .Quote{

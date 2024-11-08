@@ -357,10 +357,12 @@ a {
 }
 
 .Quote11 {
+    
     margin: 0;
     font-family: 'Satoshi';
     font-size: 50px;
     font-weight: bold;
+    text-align: left;
     
 }
 

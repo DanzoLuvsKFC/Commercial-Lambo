@@ -362,6 +362,57 @@ a {
     opacity: 60%;
 }
 
+.ColdQuote3 {
+    margin-bottom: 150px;
+    padding-top: 75px;
+    color: #FAFAFA;
+    margin: 30px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.Quote3 {
+    margin: 0;
+    font-family: 'Satoshi';
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.Quote13 {
+    margin: 0;
+    font-family: 'Satoshi';
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Quote23 {
+    margin: 0;
+    margin-bottom: 50px;
+    font-family: 'Satoshi';
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.CeoName3 {
+    margin-top: 40px;
+    font-family: "Gambarino";
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.TitleFlex3 {
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: "Satoshi2";
+    font-size: 25px;
+    opacity: 70%;
+}
+
 /* ------------------------------THIRD SECTION---------------------------------------- */
 
 .ThirdSection {

@@ -227,6 +227,10 @@ video {
     text-align: center;
 }
 
+.MainGraphic1{
+background-color: #fbcd5d;
+}
+
 .MainGraphic video {
     position: absolute;
     top: 0;
